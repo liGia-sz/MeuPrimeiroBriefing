@@ -87,5 +87,4 @@ Não, pois o site quer apenas transpassar informações.
 
 ## Público-alvo
 
-### Foi apontado na última reunião que o público-alvo é pessoas interessadas na culinária Brasileira.
-### Para completar   
+### Foi apontado na última reunião que o público-alvo é pessoas interessadas na culinária Brasileira. Para completar, qual é o publico-alvo secundario e terciário? Descreva interesses, necessidades e oque mais souber a respeito.
