@@ -8,7 +8,7 @@
 
 ### Nome da empressa
 
-    Cantinho BRasileiro.
+Cantinho BRasileiro.
 
 ### Publico alvo
 
