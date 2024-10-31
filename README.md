@@ -88,5 +88,4 @@ Não, pois o site quer apenas transpassar informações.
 ## Público-alvo
 
 ### Foi apontado na última reunião que o público-alvo é pessoas interessadas na culinária Brasileira.
-
 ### Para completar   
