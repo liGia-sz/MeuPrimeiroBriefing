@@ -68,11 +68,11 @@ Não há data para a entrega.
 
 ## Informações gerais sobre o Web Site
 
-### Descreva o neócio/produto/empresa como se fosse uma pessoa. Uma pessoa seria? Jovem? Confiavel? Justifique.
+### Descreva o negócio/produto/empresa como se fosse uma pessoa. Uma pessoa seria? Jovem? Confiavel? Justifique.
 
 Uma pessoa de idade e sábia, que espera apensas passar conhecimento.
 
-### Quais são os pontos fortes e fracos do neócio/produto/empresa? Por quê?
+### Quais são os pontos fortes e fracos do negócio/produto/empresa? Por quê?
 
 **Ponto forte** - Nicho específico, focar em receitas brasileiras permite atingir o público específico e leal.
 **Ponto fraco** - Limitação de alcance, por se concentrar apenas receitas brasileiras o site pode ter dificuldade em receber visitas estrangeiras.
@@ -88,3 +88,5 @@ Não, pois o site quer apenas transpassar informações.
 ## Público-alvo
 
 ### Foi apontado na última reunião que o público-alvo é pessoas interessadas na culinária Brasileira.
+
+### Para completar   
