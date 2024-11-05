@@ -20,11 +20,11 @@ Mostrar receiras que são apenas Brasleiras ensinando passo a passo com opções
 
 ### "Imagem" a ser transmitida
 
-De confiança e originalidade, onde toods podem fazer receitas originais do Brasil.
+De confiança e originalidade, onde todos podem fazer receitas originais do Brasil.
 
 ### Conteúdo dinâmico? Qual?
 
-Terá abas das receitas mais famossas e pesquisadas do site, também terá divisão spbre doce, salgados, bolos e sobremessas.
+Terá abas das receitas mais famossas e pesquisadas do site, também terá divisão sobre doce, salgados, bolos e sobremessas.
 
 ### Concorrentes
 
@@ -163,3 +163,41 @@ Opção de salvar receitas favoritas.
 **Testes de Usabilidade**: Feedback positivo dos usuários.
 
 **SEO**: Otimização para mecanismos de busca.
+
+## Aparencia (DESIGN)
+
+### Tem em mente alguma aparência para o web site?
+
+Sim, a ideia é ter uma aparência vibrante e acolhedora, que remeta à cultura brasileira, mas ao mesmo tempo seja limpa e fácil de navegar. O design deve refletir a diversidade e a riqueza da culinária brasileira, com cores vivas e imagens de pratos autênticos, mas sem sobrecarregar o visual.
+
+### Existe padrões esxistentes, como logotipos e cores, que devem estar presentes?
+
+O site deve seguir uma identidade visual que remeta ao Brasil, com cores como verde, amarelo e vermelho, presentes na bandeira brasileira, de forma suave e harmoniosa.
+
+### O site parte de um site maior ou grupo de sites com padrões de desing que precisa ser corespondido?
+
+A ideia é criar uma identidade própria e exclusiva para o Cantinho Brasileiro, sem comprometer a personalidade única do projeto.
+
+### Quais são alguns outros sites da web que você gosta? O que você gosta a respeito deles? Se possível, envie links de refêrencia.
+
+**Tudo Gostoso** - Esse site é um excelente exemplo de como organizar receitas de maneira simples e prática, com categorização por tipo de prato e fácil navegação. A interface é limpa e as receitas são detalhadas e bem explicadas.
+
+**Receitas Nestlé** - A Nestlé faz um trabalho muito bom com receitas familiares, com uma navegação fácil e receitas bem organizadas. Eles têm boas opções de visualizações de imagens, e o design é muito visualmente apelativo, com foco nas receitas.
+
+## Outros
+
+### Quem será o responsavel pelo contato para eventuais esclarecimentos sobre o projeto e envio de materiais?
+
+O responsável será a pessoa ou equipe de marketing da Cantinho Brasileiro. Esta pessoa se encarregará de enviar os materiais necessários, como imagens de pratos, textos de receitas e qualquer outro conteúdo relevante para o desenvolvimento do site.
+
+### No Briefing Preliminar, foram apontados como concorrentes Receitas Nestlé. O que é mais preocupante em relação a eles? Teria algumas informações mais detalhadas a respeito?
+
+A Receitas Nestlé é uma marca consolidada e possui um vasto repertório de receitas de qualidade, além de ser extremamente confiável. O que mais preocupa é a grande visibilidade e a capacidade de produção de conteúdo de grande volume e diversidade, que pode competir diretamente com a proposta do **Cantinho Brasileiro**.
+
+### O que não pode haver no web site, em função dos concorrentes? Adaptando do artigo: Briefing para desenvolvimento de web sites: considerações, dicas e modelos
+
+**Design excessivamente carregado**: Alguns sites de receitas ficam sobrecarregados com muitos anúncios e conteúdos em excesso. O Cantinho Brasileiro deve prezar por um design simples, com conteúdo claro e direto.
+
+**Falta de acessibilidade e de mobile first**: Muitos sites ainda não são responsivos e não funcionam bem em dispositivos móveis, o que prejudica a experiência do usuário.
+
+**Conteúdo genérico**: Diferente de marcas como Nestlé ou Sadia, que oferecem receitas com um enfoque muito comercial e industrial, o Cantinho Brasileiro deve focar em receitas autênticas, passadas de geração em geração, com um toque de originalidade e identidade própria.
