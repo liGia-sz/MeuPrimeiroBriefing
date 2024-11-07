@@ -49,3 +49,21 @@
     left: 0;
     /* Alinha a linha ao lado esquerdo */
 }
+
+.carousel-inner img {
+    height: 800px;
+    object-fit: convert;
+
+}
+
+.img-container {
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
