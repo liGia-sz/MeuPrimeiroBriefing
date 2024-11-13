@@ -91,7 +91,7 @@ body {
 /*CARROSSEL*/
 .carousel-inner img {
     width: 200%;
-    height: 400px; 
+    height: 700px; 
     object-fit: cover; 
   }
 
