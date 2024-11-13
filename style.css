@@ -1,131 +1,143 @@
 /* NAVBAR */
 /* Centralizar os itens da navbar */
 .navbar-nav {
-    margin: 0 auto; /* Centraliza todo o conteúdo da navbar */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0 auto;
+  /* Centraliza todo o conteúdo da navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Ajuste para a logo */
 .navbar-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Espaço nas margens dos itens */
 .nav-item {
-    margin-left: 15px;
-    margin-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
+
 /* Centralizar os itens na navbar */
 .navbar-nav {
-    justify-content: center; 
-    align-items: center;     
+  justify-content: center;
+  align-items: center;
 }
 
 /* Espaçamento extra na navbar */
 .navbar {
-    min-height: 90px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  min-height: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 .navbar {
-    height: 7.5vh;
+  height: 7.5vh;
 }
 
 /** Ocultar a seta padrão do dropdown **/
 .dropdown-toggle-no-arrow::after {
-    display: none;
+  display: none;
 }
 
 /** Abrir dropdown com hover **/
 .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 /* Efeito amarelo ao passar o mouse */
 .nav-link.nav-hover {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .nav-link.nav-hover::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    /* Espessura da linha */
-    background-color: var(--bs-yellow);
-    /* Cor da linha */
-    transition: width 0.4s ease, left 0.4s ease;
-    /* Transição apenas para hover */
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  /* Espessura da linha */
+  background-color: var(--bs-yellow);
+  /* Cor da linha */
+  transition: width 0.4s ease, left 0.4s ease;
+  /* Transição apenas para hover */
 }
 
 .nav-link.nav-hover:hover::after {
-    width: 100%;
-    /* Largura total ao passar o mouse */
-    left: 0;
-    /* Alinha a linha ao lado esquerdo */
+  width: 100%;
+  /* Largura total ao passar o mouse */
+  left: 0;
+  /* Alinha a linha ao lado esquerdo */
 }
 
 /* Linha fixa abaixo do item ativo */
 .nav-item.active .nav-link.nav-hover::after {
-    width: 100%;
-    /* Largura total da linha */
-    left: 0;
-    /* Alinha a linha ao lado esquerdo */
+  width: 100%;
+  /* Largura total da linha */
+  left: 0;
+  /* Alinha a linha ao lado esquerdo */
 }
 
 /*CARROSSEL*/
 .carousel-inner img {
-    width: 200%;
-    height: 500px; 
-    object-fit: cover; 
-  }
+  width: 200%;
+  height: 500px;
+  object-fit: cover;
+}
 
 .img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*TEXTO ANIMADO*/
 .texto-animado {
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-  .texto-animado p {
-    display: inline-block;
-    padding-left: 100%;
-    animation: loopTexto 20s linear infinite;
-    font-size: 4.5rem; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #eeb752; /* Ajuste a cor do texto */
-  }
-  
-  @keyframes loopTexto {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.texto-animado p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: loopTexto 20s linear infinite;
+  font-size: 4.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #eeb752;
+  /* Ajuste a cor do texto */
+}
+
+@keyframes loopTexto {
+  0% {
+    transform: translateX(0%);
   }
 
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /*CARROSSEL DE CARDS*/
-  .card-group .card {
-    margin: 10px; /* Espaçamento entre os cards */
-  }
-  
-  .carousel .carousel-inner {
-    padding: 09px; /* Espaçamento para separar os cards das setas de navegação */
-  }
-  
-  
+.card-group .card {
+  margin: 10px;
+  /* Espaçamento entre os cards */
+}
+
+.carousel .carousel-inner {
+  padding: 09px;
+  /* Espaçamento para separar os cards das setas de navegação */
+}
+
+
+.titulo {
+  color: #eeb752;
+  font-family: Arial Unicode MS;
+  font-size: 50pt;
+}
