@@ -9,6 +9,10 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
 
+  <!-- Link para Font Awesome (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMWx/w17N1yFCO7xzBf6VobH6lcxXoY8s+g8V4R" crossorigin="anonymous">
+
   <!--Bootstrap Icons-->
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
@@ -16,9 +20,8 @@
 <body>
 
   <header>
-    <!--Navbar-->
+    <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg border-bottom border-warning">
-      <img src="img/logo.png" alt="Cantinho" width="90" height="80">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,16 +30,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-
             <li class="nav-item">
               <div class="container">
                 <a class="nav-link nav-hover h6 text-dark" href="quemsomos.html">Quem somos</a>
               </div>
-
             </li>
-
-
-
 
             <li class="nav-item ms-3 me-3 dropdown">
               <a class="nav-link nav-hover h6 text-dark" href="doces.html">Doces</a>
@@ -55,7 +53,6 @@
             </li>
 
             <li class="nav-item ms-3 me-3 dropdown">
-
               <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Salgados</a>
               <ul class="dropdown-menu border-warning">
                 <li><a class="dropdown-item" href="pastadeslaoque.html">Salada de Agrião</a></li>
@@ -68,10 +65,27 @@
                 </li>
                 <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
               </ul>
-
             </li>
+
+            <img src="img/logo.png" alt="Cantinho" width="90" height="90"> <!--Logo-->
+            <a class="navbar-brand mx-4" href="index.html"></a>
+
             <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Bolos e sobremesas</a>
+              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Bebidas</a>
+              <ul class="dropdown-menu border-warning">
+                <li><a class="dropdown-item" href="pastadeslaoque.html">Salada de Agrião</a></li>
+                <li><a class="dropdown-item" href="pastadeslaoque.html">Viinagrete</a></li>
+                <li><a class="dropdown-item" href="pastadeslaoque.html">Aioli</a></li>
+                <li><a class="dropdown-item" href="pastadeslaoque.html">Molho sla</a></li>
+                <li>
+                  <hr class="dropdown-divider border-warning">
+                </li>
+                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item ms-3 me-3 dropdown">
+              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Carnes</a>
               <ul class="dropdown-menu border-warning">
                 <li><a class="dropdown-item" href="pastadeslaoque.html">Salada de Agrião</a></li>
                 <li><a class="dropdown-item" href="pastadeslaoque.html">Viinagrete</a></li>
@@ -100,32 +114,38 @@
 
           </ul>
 
-
+          <img src="img/receitas.fav.png" alt="Cantinho" width="50" height="50"> <!--Logo Livro de Receitas-->
           <a class="navbar-brand mx-4" href="index.html"></a>
-
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-warning" type="submit">Search</button>
-          </form>
         </div>
-
-      </div>
     </nav>
-
   </header>
+
+
   <main>
-    
+    <div class="text-center">
+      <img src="img/imgquemsomos.jfif" class="rounded" alt="..." width="1000" height="700">
+    </div>
+    <div class="text-center">
+      <p>
+      <h1 class="titulo"> Conheça a Gente!</h1>
+      </p>
+      <div class="container">
+        <p><h4>Somos um site dedicado a celebrar e comparttilhar a rica e diversificada culinária brasileira, trazendo à
+          tona os sabores e tradições de todas as regiões do país. Aqui, você encontra receitas autênticas, dicas de
+          preparo e histórias sobre pratos típicos que fazem parte da identidade gastronômica do Brasil. Da Feijoada
+          carioca às moquecas baianas, passando pelo clássico arroz com pequi do Centro-Oeste, a saborosa carne de sol
+          com macaxeira do Nordeste e o arroz de carreteiro do Sul, nossa missão é resgatar e divulgar as iguarias que
+          encantam e alimentam as pessoas por todo o território nacional e internacional.</h4></p>
+
+
+          <p><h4>Com o intuito de aproximar todos dos sabores regionais, nosso site é um espaço onde qualquer pessoa, seja
+          iniciante ou cozinheiro experiente, pode aprender a preparar pratos que vão de simples delícias do cotidiano a
+          receitas sofisticadas e recheadas de história. Junte-se a nós nessa jornada para descobrir, criar e se
+          apaixonar pela culinária que faz do Brasil um verdadeiro festim de sabores!</h4></p>
+      </div>
+    </div>
   </main>
 
 
   <footer>
-
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
-
-
-</html>
+    <p>© Cantinho BRasileiro 2024</p>
