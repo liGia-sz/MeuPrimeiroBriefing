@@ -1,4 +1,36 @@
-/* Navbar */
+/* NAVBAR */
+/* Centralizar os itens da navbar */
+.navbar-nav {
+    margin: 0 auto; /* Centraliza todo o conteúdo da navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajuste para a logo */
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Espaço nas margens dos itens */
+.nav-item {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/* Centralizar os itens na navbar */
+.navbar-nav {
+    justify-content: center; 
+    align-items: center;     
+}
+
+/* Espaçamento extra na navbar */
+.navbar {
+    min-height: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .navbar {
     height: 7.5vh;
 }
@@ -15,7 +47,7 @@
     transition: opacity 0.3s ease;
 }
 
-/* Efeito vermelho ao passar o mouse */
+/* Efeito amarelo ao passar o mouse */
 .nav-link.nav-hover {
     position: relative;
     overflow: hidden;
@@ -50,20 +82,50 @@
     /* Alinha a linha ao lado esquerdo */
 }
 
+/*CARROSSEL*/
 .carousel-inner img {
-    height: 800px;
-    object-fit: convert;
-
-}
-
-.img-container {
-    height: 300px;
-    object-fit: cover;
-
-}
+    width: 200%;
+    height: 500px; 
+    object-fit: cover; 
+  }
 
 .img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+/*TEXTO ANIMADO*/
+.texto-animado {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .texto-animado p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: loopTexto 20s linear infinite;
+    font-size: 4.5rem; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #eeb752; /* Ajuste a cor do texto */
+  }
+  
+  @keyframes loopTexto {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+/*CARROSSEL DE CARDS*/
+  .card-group .card {
+    margin: 10px; /* Espaçamento entre os cards */
+  }
+  
+  .carousel .carousel-inner {
+    padding: 09px; /* Espaçamento para separar os cards das setas de navegação */
+  }
+  
+  

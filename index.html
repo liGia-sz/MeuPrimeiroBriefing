@@ -9,6 +9,9 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
 
+  <!-- Link para Font Awesome (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMWx/w17N1yFCO7xzBf6VobH6lcxXoY8s+g8V4R" crossorigin="anonymous">
+
   <!--Bootstrap Icons-->
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
@@ -16,9 +19,8 @@
 <body>
 
   <header>
-    <!--Navbar-->
+    <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg border-bottom border-warning">
-      <img src="img/logo.png" alt="Cantinho" width="90" height="80">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,16 +29,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-
             <li class="nav-item">
               <div class="container">
                 <a class="nav-link nav-hover h6 text-dark" href="quemsomos.html">Quem somos</a>
               </div>
-
             </li>
-
-
-
 
             <li class="nav-item ms-3 me-3 dropdown">
               <a class="nav-link nav-hover h6 text-dark" href="doces.html">Doces</a>
@@ -55,7 +52,6 @@
             </li>
 
             <li class="nav-item ms-3 me-3 dropdown">
-
               <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Salgados</a>
               <ul class="dropdown-menu border-warning">
                 <li><a class="dropdown-item" href="pastadeslaoque.html">Salada de Agrião</a></li>
@@ -68,10 +64,27 @@
                 </li>
                 <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
               </ul>
-
             </li>
+
+            <img src="img/logo.png" alt="Cantinho" width="90" height="90"> <!--Logo-->
+            <a class="navbar-brand mx-4" href="index.html"></a>
+
             <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Bolos e sobremesas</a>
+              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Bebidas</a>
+              <ul class="dropdown-menu border-warning">
+                <li><a class="dropdown-item" href="pastadeslaoque.html">Salada de Agrião</a></li>
+                <li><a class="dropdown-item" href="pastadeslaoque.html">Viinagrete</a></li>
+                <li><a class="dropdown-item" href="pastadeslaoque.html">Aioli</a></li>
+                <li><a class="dropdown-item" href="pastadeslaoque.html">Molho sla</a></li>
+                <li>
+                  <hr class="dropdown-divider border-warning">
+                </li>
+                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item ms-3 me-3 dropdown">
+              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Carnes</a>
               <ul class="dropdown-menu border-warning">
                 <li><a class="dropdown-item" href="pastadeslaoque.html">Salada de Agrião</a></li>
                 <li><a class="dropdown-item" href="pastadeslaoque.html">Viinagrete</a></li>
@@ -99,23 +112,16 @@
             </li>
 
           </ul>
-
-
+        
+          <img src="img/receitas.fav.png" alt="Cantinho" width="50" height="50"> <!--Logo Livro de Receitas-->
           <a class="navbar-brand mx-4" href="index.html"></a>
-
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-warning" type="submit">Search</button>
-          </form>
-        </div>
-
       </div>
     </nav>
-
   </header>
+
+  <!--CARROSSEL-->
   <main>
-    <div class="container">
-      <div id="carouselExampleCaptions" class="carousel slide">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -123,6 +129,10 @@
             aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -146,7 +156,23 @@
               <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
+          <div class="carousel-item">
+            <img src="img/brigadeirobeijinho.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/brigadeirobeijinho.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
         </div>
+
+      <!--Botões do Carrossel-->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -158,13 +184,122 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <!--TEXTO ANIMADO-->
+      <div class="texto-animado">
+        <p>Cozinhe como um Brasileiro! Receitas autênticas de todas as regiões do Brasil</p>
+      </div>  
+      
+      <!--FAVORITO DO SITE-->
+      <div id="carouselReceitasPopulares" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+      
+          <!-- Primeiro item do carrossel (com três cards) -->
+          <div class="carousel-item active">
+            <div class="card-group">
+              
+              <!-- Card 1 -->
+              <div class="card">
+                <img src="img/receita1.jpg" class="card-img-top" alt="Receita 1">
+                <div class="card-body">
+                  <h5 class="card-title">Receita 1</h5>
+                  <p class="card-text">Descrição breve da Receita 1.</p>
+                </div>
+              </div>
+      
+              <!-- Card 2 -->
+              <div class="card">
+                <img src="img/receita2.jpg" class="card-img-top" alt="Receita 2">
+                <div class="card-body">
+                  <h5 class="card-title">Receita 2</h5>
+                  <p class="card-text">Descrição breve da Receita 2.</p>
+                </div>
+              </div>
+      
+              <!-- Card 3 -->
+              <div class="card">
+                <img src="img/receita3.jpg" class="card-img-top" alt="Receita 3">
+                <div class="card-body">
+                  <h5 class="card-title">Receita 3</h5>
+                  <p class="card-text">Descrição breve da Receita 3.</p>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+          <!-- Segundo item do carrossel (com outros três cards) -->
+          <div class="carousel-item">
+            <div class="card-group">
+              
+              <!-- Card 4 -->
+              <div class="card">
+                <img src="img/receita4.jpg" class="card-img-top" alt="Receita 4">
+                <div class="card-body">
+                  <h5 class="card-title">Receita 4</h5>
+                  <p class="card-text">Descrição breve da Receita 4.</p>
+                </div>
+              </div>
+      
+              <!-- Card 5 -->
+              <div class="card">
+                <img src="img/receita5.jpg" class="card-img-top" alt="Receita 5">
+                <div class="card-body">
+                  <h5 class="card-title">Receita 5</h5>
+                  <p class="card-text">Descrição breve da Receita 5.</p>
+                </div>
+              </div>
+      
+              <!-- Card 6 -->
+              <div class="card">
+                <img src="img/receita6.jpg" class="card-img-top" alt="Receita 6">
+                <div class="card-body">
+                  <h5 class="card-title">Receita 6</h5>
+                  <p class="card-text">Descrição breve da Receita 6.</p>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+      
+        <!-- Botões de navegação -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselReceitasPopulares" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselReceitasPopulares" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--SEÇÃO CHAMATIVA "QUEM SOMOS"-->
+      <section class="quem-somos-section">
+        <div class="content">
+          <h2>Saiba Mais Sobre Nós</h2>
+          <p>Conheça nossa história e nossa paixão pelas receitas típicas brasileiras.</p>
+          <a href="quem-somos.html" class="btn-quem-somos">Quem Somos</a>
+        </div>
+      </section>      
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-6">
+            <div class="container p-5">
+                <h1>No dê um oi!</h1>
+                <p>olaCantinho@gmail.com.br</p>
+            </div>
+        </div>
     </div>
+</main>
+
+<footer>
+    <p>© Cantinho BRasileiro 2024</p>
+</footer>
+    </body>
   </main>
-
-
-  <footer>
-
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
