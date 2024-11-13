@@ -1,3 +1,9 @@
+/*BACKGROUND*/
+body {
+  background-color: rgb(245, 248, 224);
+}
+
+
 /* NAVBAR */
 /* Centralizar os itens da navbar */
 .navbar-nav {
@@ -85,7 +91,7 @@
 /*CARROSSEL*/
 .carousel-inner img {
     width: 200%;
-    height: 500px; 
+    height: 400px; 
     object-fit: cover; 
   }
 
