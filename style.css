@@ -88,6 +88,34 @@ body {
     /* Alinha a linha ao lado esquerdo */
 }
 
+/*Tooltip do livro de receitas*/
+.tooltip-recado {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-recado::after {
+  content: attr(data-recado);
+  position: absolute;
+  bottom: 120%; /* Ajuste a posição do tooltip acima da logo */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  font-size: 14px;
+}
+
+.tooltip-recado:hover::after {
+  opacity: 1;
+}
+
+
 /*CARROSSEL*/
 .carousel-inner img {
     width: 200%;
