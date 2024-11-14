@@ -161,5 +161,11 @@ body {
   .carousel .carousel-inner {
     padding: 09px; /* Separa os cards das setas de navegação */
   }
+  .titulo 
+  {
+    font-size: 50px;
+    color:#eeb752;
+
+  }
   
   
