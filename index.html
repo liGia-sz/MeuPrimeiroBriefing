@@ -124,8 +124,10 @@
 
           </ul>
         
-          <a class="navbar-brand mx-4 tooltip-recado" href="index.html" data-recado="Voltar à página inicial"> <!--Logo livro de receitas-->
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+           Livro de Receitas
             <img src="img/receitas.fav.png" alt="Cantinho" width="50" height="50">
+          <a class="navbar-brand mx-4 tooltip-recado" href="index.html" data-recado="Salve suas receitas prediletas do nosso site!"> <!--Logo livro de receitas--> 
         </a>
         
           </li>
@@ -134,138 +136,126 @@
     </nav>
   </header>
 
-  <!--CARROSSEL-->
-  <main>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-            aria-label="Slide 5"></button>
+  <!-- CARROSSEL -->
+<main>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/Carrossel-Sul.png" class="d-block w-100" alt="Região Sul">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Região Sul - Chimarrão</h3>
+          <h4>Símbolo da amizade, o chimarrão é compartilhado entre amigos há gerações!</h4>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/Carrossel-Sul.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Região Sul - Chimarrão</h3>
-              <h4>Símbolo da amizade, o chimarrão é compartilhado entre amigos há gerações!</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/Carrossel-Sudeste.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Região Sudeste - Pão de Queijo</h3>
-              <h4>A iguaria mineira que nasceu nos fornos coloniais e conquistou o Brasil!</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/Carrossel-Centro Oeste.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Região Centro Oeste - Arroz Doce</h3>
-              <h4>Doce tradicional com raízes indígenas e europeias, é presença certa nas festas juninas!</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrossel-Norte.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Região Norte - Tacacá</h3>
-              <h4>Caldo quente e saboroso, o tacacá é feito com tucupi e jambu, que ‘anestesia’ a língua!</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/Carrossel-Nordeste.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Região Nordeste - Acarajé</h3>
-              <h4>Do sagrado ao popular, o acarajé é patrimônio cultural e delícia de origem africana!</h4>
-            </div>
-          </div>
-        </div>
-
-      <!--Botões do Carrossel-->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+      <div class="carousel-item">
+        <img src="img/Carrossel-Sudeste.png" class="d-block w-100" alt="Região Sudeste">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Região Sudeste - Pão de Queijo</h3>
+          <h4>A iguaria mineira que nasceu nos fornos coloniais e conquistou o Brasil!</h4>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/Carrossel-Centro Oeste.png" class="d-block w-100" alt="Região Centro-Oeste">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Região Centro Oeste - Arroz Doce</h3>
+          <h4>Doce tradicional com raízes indígenas e europeias, é presença certa nas festas juninas!</h4>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/carrossel-Norte.jpg" class="d-block w-100" alt="Região Norte">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Região Norte - Tacacá</h3>
+          <h4>Caldo quente e saboroso, o tacacá é feito com tucupi e jambu, que ‘anestesia’ a língua!</h4>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/Carrossel-Nordeste.png" class="d-block w-100" alt="Região Nordeste">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Região Nordeste - Acarajé</h3>
+          <h4>Do sagrado ao popular, o acarajé é patrimônio cultural e delícia de origem africana!</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
 
       <!--TEXTO ANIMADO-->
       <div class="texto-animado">
         <p>Cozinhe como um Brasileiro! Receitas autênticas de todas as regiões do Brasil</p>
       </div>  
       
-      <!--BLOCO DE CARDS PARA FAVORITOS DO SITE-->
+      <!-- Bloco de Cards para Favoritos do Site -->
+<div class="Título Top5 text-center">
+  <h1>Top 5 do Cantinho</h1>
+  <h2>Confira as 5 receitas mais populares do nosso site!</h2>
+</div>
 
-      <div class="Título Top5">
-        <h2>Confira as 5 receitas mais populares do nosso site!</h2>
-      </div> 
+<div class="container my-4">
+  <div class="card-group gap-4"> <!-- Aumento da separação entre os cards -->
+    
+    <!-- Card 1 -->
+    <div class="card" style="width: 18rem;">
+      <img src="img/TOP1-Feijoada.Camadas.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Feijoada em Camadas</h5>
+        <p class="card-text">Esta receita une os sabores e ingredientes típicos de todas as regiões do Brasil em um prato sofisticado e criativo...</p>
+        <a href="#" class="btn btn-warning">Ver Receita</a>
+      </div>
+    </div>
 
-        <div class="container my-4">
-          <div class="card-group">
-            
-            <!-- Card 1 -->
-            <div class="card">
-              <img src="img/receita1.jpg" class="card-img-top" alt="Receita 1">
-              <div class="card-body">
-                <h5 class="card-title">Receita 1</h5>
-                <p class="card-text">Descrição breve da Receita 1.</p>
-                <a href="receita1.html" class="btn btn-warning w-50">Ver Receita</a> <!-- Botão para ver a receita -->
-              </div>
-            </div>
+    <!-- Card 2 -->
+    <div class="card" style="width: 18rem;">
+      <img src="img/TOP1-Feijoada.Camadas.png" class="card-img-top" alt="Receita 2">
+      <div class="card-body">
+        <h5 class="card-title">Frango Crocante na Air Fryer</h5>
+        <p class="card-text">Essa receita é super simples, rápida e deliciosa...</p>
+        <a href="receita1.html" class="btn btn-warning w-50">Ver Receita</a>
+      </div>
+    </div>
 
-            <!-- Card 2 -->
-            <div class="card">
-              <img src="img/receita2.jpg" class="card-img-top" alt="Receita 2">
-              <div class="card-body">
-                <h5 class="card-title">Receita 2</h5>
-                <p class="card-text">Descrição breve da Receita 2.</p>
-                <a href="receita1.html" class="btn btn-warning w-50">Ver Receita</a> <!-- Botão para ver a receita -->
-              </div>
-            </div>
+    <!-- Card 3 -->
+    <div class="card" style="width: 18rem;">
+      <img src="img/TOP1-Feijoada.Camadas.png" class="card-img-top" alt="Receita 3">
+      <div class="card-body">
+        <h5 class="card-title">Arraiá Tropical</h5>
+        <p class="card-text">Este drink é uma mistura deliciosa de sabores tropicais...</p>
+        <a href="receita1.html" class="btn btn-warning w-50">Ver Receita</a>
+      </div>
+    </div>
 
-            <!-- Card 3 -->
-            <div class="card">
-              <img src="img/receita3.jpg" class="card-img-top" alt="Receita 3">
-              <div class="card-body">
-                <h5 class="card-title">Receita 3</h5>
-                <p class="card-text">Descrição breve da Receita 3.</p>
-                <a href="receita1.html" class="btn btn-warning w-50">Ver Receita</a> <!-- Botão para ver a receita -->
-              </div>
-            </div>
+    <!-- Card 4 -->
+    <div class="card" style="width: 18rem;">
+      <img src="img/TOP1-Feijoada.Camadas.png" class="card-img-top" alt="Receita 4">
+      <div class="card-body">
+        <h5 class="card-title">Marido Gelado com Brigadeiro</h5>
+        <p class="card-text">O Marido Gelado é uma sobremesa típica...</p>
+        <a href="receita1.html" class="btn btn-warning w-50">Ver Receita</a>
+      </div>
+    </div>
 
-            <!-- Card 4 -->
-            <div class="card">
-              <img src="img/receita4.jpg" class="card-img-top" alt="Receita 4">
-              <div class="card-body">
-                <h5 class="card-title">Receita 4</h5>
-                <p class="card-text">Descrição breve da Receita 4.</p>
-                <a href="receita1.html" class="btn btn-warning w-50">Ver Receita</a> <!-- Botão para ver a receita -->
-              </div>
-            </div>
+    <!-- Card 5 -->
+    <div class="card" style="width: 18rem;">
+      <img src="img/TOP1-Feijoada.Camadas.png" class="card-img-top" alt="Receita 5">
+      <div class="card-body">
+        <h5 class="card-title">Salada Tropical</h5>
+        <p class="card-text">Essa salada traz uma mistura de ingredientes típicos da culinária nordestina...</p>
+        <a href="receita1.html" class="btn btn-warning w-50">Ver Receita</a>
+      </div>
+    </div>
 
-            <!-- Card 5 -->
-            <div class="card">
-              <img src="img/receita5.jpg" class="card-img-top" alt="Receita 5">
-              <div class="card-body">
-                <h5 class="card-title">Receita 5</h5>
-                <p class="card-text">Descrição breve da Receita 5.</p>
-                <a href="receita1.html" class="btn btn-warning w-50">Ver Receita</a> <!-- Botão para ver a receita -->
-              </div>
-            </div>
+  </div>
+</div>
 
-          </div>
-        </div>
+
 
       
         <!-- Botões de navegação -->
@@ -282,25 +272,63 @@
       <!--SEÇÃO CHAMATIVA "QUEM SOMOS"-->
       <section class="quem-somos-section">
         <div class="content">
-          <h2>Saiba Mais Sobre Nós</h2>
-          <p>Conheça nossa história e nossa paixão pelas receitas típicas brasileiras.</p>
-          <a href="quemsomos.html" class="btn btn-success w-20">Quem somos</a>
-        </div>
-      </section>      
-
-      <div class="row align-items-center">
-
-        <div class="col-lg-6">
-            <div class="container p-5">
-                <h1>Nos dê um oi!</h1>
-                <p>olaCantinho@gmail.com.br</p>
+          <div class="text-container">
+            <h2>Saiba Mais Sobre Nós</h2>
+            <p>Conheça nossa história e nossa paixão pelas receitas típicas brasileiras.</p>
+            <a href="quemsomos.html" class="btn btn-success">Quem somos</a>
+            <div class="testimonials">
+              <p> </p>
+              <p>“Uma experiência deliciosa com sabores inesquecíveis!” – João Silva</p>
+              <p>“Receitas fáceis e rápidas para todos os gostos!” – Ana Souza</p>
+              <p>“Cada receita traz uma lembrança especial.” – Maria Costa</p>
             </div>
+          </div>
+          <div class="image-container">
+            <img src="img/quem.somos.index.PNG" alt="Imagem Quem Somos">
+          </div>
         </div>
-    </div>
+      </section>
 </main>
 
 <footer>
-    <p>© Cantinho BRasileiro 2024</p>
+  <!-- Seção de Redes Sociais -->
+<div class="row align-items-center">
+  <div class="col-lg-6">
+    <div class="container p-5">
+      <h2>Siga-nos nas redes sociais!</h2>
+      <div class="d-flex align-items-center mb-3">
+        <img src="img/facebook.footer.png" alt="CantinhoBrasileiroOficial" width="60" height="30">
+        <p class="ms-2 mb-0">CantinhoBrasileiroOficial</p>
+      </div>
+
+      <div class="d-flex align-items-center mb-3">
+        <img src="img/instagram.footer.png" alt="CantinhoBR_oficial" width="60" height="30">
+        <p class="ms-2 mb-0">CantinhoBR_oficial</p>
+      </div>
+
+      <div class="d-flex align-items-center mb-3">
+        <img src="img/youtube.footer.png" alt="CantinhoBrasileiro" width="60" height="30">
+        <p class="ms-2 mb-0">CantinhoBrasileiro</p>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <img src="img/email.footer.png" alt="ola@Cantinho.com" width="60" height="30">
+        <p class="ms-2 mb-0">ola@Cantinho.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Assinatura de Newsletter -->
+ <div class="newsletter text-center p-4">
+  <h4>Inscreva-se para receber nossas novidades!</h4>
+  <form action="#">
+    <input type="email" placeholder="Digite seu e-mail" required>
+    <button type="submit" class="btn btn-success">Assinar</button>
+  </form>
+</div>
+  <p class="text-center">© Cantinho Brasileiro 2024</p>
 </footer>
     </body>
   </main>
