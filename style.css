@@ -117,17 +117,25 @@ body {
 
 
 /*CARROSSEL*/
-.carousel-inner img {
-    width: 200%;
-    height: 700px; 
-    object-fit: cover; 
-  }
-
-.img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.carousel {
+  width: 100vw; /* Faz o carrossel ocupar toda a largura da janela */
+  max-width: 3000px; /* Define um limite máximo de largura, se necessário */
+  padding: 0;
+  margin: 0; /* Remove margens automáticas */
 }
+
+.carousel-inner img {
+  width: 100vw; /* Força as imagens a ocupar toda a largura da viewport */
+  height: 500px; /* Ajusta a altura das imagens */
+  object-fit: cover; /* Mantém as imagens proporcionais sem deformá-las */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para o texto */
+  padding: 10px;
+  border-radius: 10px; /* Cantos arredondados */
+}
+
 
 /*TEXTO ANIMADO*/
 .texto-animado {
@@ -186,21 +194,22 @@ img {
   border-radius: 10px;
 }
 
-/* Aumenta o espaço entre os cards */
-.card-group {
-  gap: 2rem; /* Ajuste o valor conforme necessário */
+/* CARD TOP5 */
+.row.g-4 {
+  margin: 0 auto; /* Centraliza os cards no contêiner */
 }
 
-/* Faz a imagem ocupar mais espaço no card */
-.card-img-top {
-  height: 200px; /* Ajuste a altura da imagem conforme necessário */
-  object-fit: cover; /* Faz com que a imagem ocupe toda a área disponível sem distorcer */
-}
-
-/* Opcional: Aumenta a altura do card se necessário */
+/* Configurações dos cards */
 .card {
-  height: 400px; /* Ajuste a altura do card conforme necessário */
+  width: 100%; /* Faz o card ocupar o espaço da coluna */
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px #575c46;
 }
 
-  
-  
+/* CARDS TOP3 */
+.card-img-top {
+  height: 300px;
+  object-fit: cover; /* Ajusta a imagem dentro do espaço disponível */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}

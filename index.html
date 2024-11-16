@@ -124,18 +124,17 @@
 
           </ul>
         
-          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
-           Livro de Receitas
-            <img src="img/receitas.fav.png" alt="Cantinho" width="50" height="50">
-          <a class="navbar-brand mx-4 tooltip-recado" href="index.html" data-recado="Salve suas receitas prediletas do nosso site!"> <!--Logo livro de receitas--> 
+        <!-- Logo como um botão simples (BUGADO) -->
+      <li class="nav-item ms-3">
+        <a class="nav-link p-0" href="quemsomos.html">
+          <img src="img/receitas.fav.png" alt="Livro de Receitas" width="50" height="50" class="d-block">
         </a>
-        
-          </li>
-          
+      </li>
+
       </div>
     </nav>
   </header>
-
+</body>
   <!-- CARROSSEL -->
 <main>
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -183,91 +182,73 @@
           <h4>Do sagrado ao popular, o acarajé é patrimônio cultural e delícia de origem africana!</h4>
         </div>
       </div>
-    </div>
+   </div>
   </div>
 </main>
 
+<!-- Botões de navegação -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselReceitasPopulares" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselReceitasPopulares" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
 
       <!--TEXTO ANIMADO-->
       <div class="texto-animado">
         <p>Cozinhe como um Brasileiro! Receitas autênticas de todas as regiões do Brasil</p>
       </div>  
       
-      <!-- Bloco de Cards para Favoritos do Site -->
-<div class="Título Top5 text-center">
-  <h1>Top 5 do Cantinho</h1>
-  <h2>Confira as 5 receitas mais populares do nosso site!</h2>
+      <!-- BLOCO PARA FAVORITOS DO SITE -->
+<div class="Título Top3 text-center">
+  <h1>Top 3 do Cantinho</h1>
+  <h2>Confira as 3 receitas mais populares do nosso site!</h2>
 </div>
 
 <div class="container my-4">
-  <div class="card-group gap-4"> <!-- Aumento da separação entre os cards -->
-    
+  <div class="row g-4"> <!-- Substitui card-group por grid com espaçamento -->
     <!-- Card 1 -->
-    <div class="card" style="width: 18rem;">
-      <img src="img/TOP1-Feijoada.Camadas.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Feijoada em Camadas</h5>
-        <p class="card-text">Esta receita une os sabores e ingredientes típicos de todas as regiões do Brasil em um prato sofisticado e criativo...</p>
-        <a href="#" class="btn btn-warning">Ver Receita</a>
+    <div class="col-md-4"> <!-- Divide em colunas responsivas -->
+      <div class="card">
+        <img src="img/TOP1 - Feijoada.Camadas.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Feijoada em Camadas</h5>
+          <p class="card-text">Esta receita une os sabores típicos de todo Brasil...</p>
+          <a href="#" class="btn btn-warning">Ver Receita</a>
+        </div>
       </div>
     </div>
 
     <!-- Card 2 -->
-    <div class="card" style="width: 18rem;">
-      <img src="img/TOP1-Feijoada.Camadas.png" class="card-img-top" alt="Receita 2">
-      <div class="card-body">
-        <h5 class="card-title">Frango Crocante na Air Fryer</h5>
-        <p class="card-text">Essa receita é super simples, rápida e deliciosa...</p>
-        <a href="receita1.html" class="btn btn-warning w-50">Ver Receita</a>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/TOP2 - Marido Gelado.png" class="card-img-top" alt="Receita 2">
+        <div class="card-body">
+          <h5 class="card-title">Marido Gelado com Brigadeiro</h5>
+          <p class="card-text">A sobremesa mais deliciosa que faz sucesso em festas e encontros...</p>
+          <a href="receita1.html" class="btn btn-warning">Ver Receita</a>
+        </div>
       </div>
     </div>
 
     <!-- Card 3 -->
-    <div class="card" style="width: 18rem;">
-      <img src="img/TOP1-Feijoada.Camadas.png" class="card-img-top" alt="Receita 3">
-      <div class="card-body">
-        <h5 class="card-title">Arraiá Tropical</h5>
-        <p class="card-text">Este drink é uma mistura deliciosa de sabores tropicais...</p>
-        <a href="receita1.html" class="btn btn-warning w-50">Ver Receita</a>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/TOP3 - Salada Tropical.png" class="card-img-top" alt="Receita 3">
+        <div class="card-body">
+          <h5 class="card-title">Salada Tropical</h5>
+          <p class="card-text">Uma salada refrescante, cheia de sabor e perfeita para os dias quentes...</p>
+          <a href="#" class="btn btn-warning">Ver Receita</a>
+        </div>
       </div>
     </div>
-
-    <!-- Card 4 -->
-    <div class="card" style="width: 18rem;">
-      <img src="img/TOP1-Feijoada.Camadas.png" class="card-img-top" alt="Receita 4">
-      <div class="card-body">
-        <h5 class="card-title">Marido Gelado com Brigadeiro</h5>
-        <p class="card-text">O Marido Gelado é uma sobremesa típica...</p>
-        <a href="receita1.html" class="btn btn-warning w-50">Ver Receita</a>
-      </div>
     </div>
-
-    <!-- Card 5 -->
-    <div class="card" style="width: 18rem;">
-      <img src="img/TOP1-Feijoada.Camadas.png" class="card-img-top" alt="Receita 5">
-      <div class="card-body">
-        <h5 class="card-title">Salada Tropical</h5>
-        <p class="card-text">Essa salada traz uma mistura de ingredientes típicos da culinária nordestina...</p>
-        <a href="receita1.html" class="btn btn-warning w-50">Ver Receita</a>
-      </div>
-    </div>
-
   </div>
 </div>
 
-
-
-      
-        <!-- Botões de navegação -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselReceitasPopulares" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselReceitasPopulares" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
 
       <!--SEÇÃO CHAMATIVA "QUEM SOMOS"-->
       <section class="quem-somos-section">
