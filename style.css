@@ -132,17 +132,6 @@ body {
   color: white;  
 }
 
-/* Botões */
-.carousel-caption .btn {
-  position: absolute;
-  z-index: 11;  
-  padding: 10px 20px;   
-  color: white;  
-  border-radius: 5px;  
-  font-family: 'Exo 2', sans-serif;
-  text-decoration: none;  
-}
-
 .custom-carousel .carousel-inner {
   height: 100%;
 }
