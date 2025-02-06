@@ -1,6 +1,7 @@
 /*BACKGROUND*/
 body {
   background-color: rgb(245, 248, 224);
+  font-family: "Lexend", serif;
 }
 
 
@@ -116,26 +117,41 @@ body {
 }
 
 
-/*CARROSSEL*/
-.carousel {
-  width: 100vw; /* Faz o carrossel ocupar toda a largura da janela */
-  max-width: 3000px; /* Define um limite máximo de largura, se necessário */
-  padding: 0;
-  margin: 0; /* Remove margens automáticas */
-}
-
-.carousel-inner img {
-  width: 100vw; /* Força as imagens a ocupar toda a largura da viewport */
-  height: 500px; /* Ajusta a altura das imagens */
-  object-fit: cover; /* Mantém as imagens proporcionais sem deformá-las */
+/* CARROSSEL */
+.carousel-item {
+  position: relative;
+  height: 100%; 
 }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para o texto */
-  padding: 10px;
-  border-radius: 10px; /* Cantos arredondados */
+  position: absolute;
+  bottom: 10px;  
+  left: 10px;    
+  right: 10px;
+  z-index: 10;  
+  color: white;  
 }
 
+/* Botões */
+.carousel-caption .btn {
+  position: absolute;
+  z-index: 11;  
+  padding: 10px 20px;   
+  color: white;  
+  border-radius: 5px;  
+  font-family: 'Exo 2', sans-serif;
+  text-decoration: none;  
+}
+
+.custom-carousel .carousel-inner {
+  height: 100%;
+}
+
+/* Ajuste Imagem Carousel Produtos */
+.img-carousel {
+  height: 660px;
+  width: 400px;
+}
 
 /*TEXTO ANIMADO*/
 .texto-animado {
@@ -161,58 +177,11 @@ body {
     }
   }
 
+/*CARROSSEL DE CARDS*/
+  .card-group .card {
+    margin: 10px; /* Espaçamento entre os cards */
+  }
   
-  /*QUEM SOMOS*/
-.quem-somos-section .content {
-  display: flex;
-  justify-content: space-between; /* Espaço entre o texto e a imagem */
-  align-items: center;
-  flex-wrap: wrap; /* Para garantir que o layout seja responsivo */
-}
-
-.text-container {
-  flex: 1;
-  text-align: center; /* Centraliza o texto dentro do container */
-  color: #9fcd3b;
-}
-
-.testimonials {
-  margin-top: 20px;
-  font-style: italic;
-  color: rgb(144, 199, 76);
-}
-
-.image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* CARD TOP5 */
-.row.g-4 {
-  margin: 0 auto; /* Centraliza os cards no contêiner */
-}
-
-/* Configurações dos cards */
-.card {
-  width: 100%; /* Faz o card ocupar o espaço da coluna */
-  border-radius: 12px;
-  box-shadow: 4px 4px 12px #575c46;
-}
-
-/* CARDS TOP3 */
-.card-img-top {
-  height: 300px;
-  object-fit: cover; /* Ajusta a imagem dentro do espaço disponível */
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
   .carousel .carousel-inner {
     padding: 09px; /* Separa os cards das setas de navegação */
   }
@@ -221,11 +190,6 @@ img {
     font-size: 50px;
     color:#eeb752;
 
-  }
-  .receita
-  {
-    font-size:35px;
-    background-color: #eeb752;
   }
   
   
