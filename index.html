@@ -44,24 +44,22 @@
     color: rgb(233, 223, 90);
   }
 
-    /* ANIMAÇÃO DE PULSAR */
-    @keyframes pulsar {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1); 
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-  
-    /* APLICANDO ANIMAÇÃO */
-    .imagem-pulsando {
-      animation: pulsar 1s infinite; 
-      transition: transform 0.3s ease-in-out;
-    }
+  .imagem-pulsando {
+  animation: pulsar 2s infinite ease-in-out;
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 
     /* ESPAÇAMENTO CARDS */
     .card {
@@ -197,17 +195,19 @@
   <div class="row align-items-center">
     <!-- CONTAINER 1: TEXTO SOBRE O SITE -->
     <div class="col-lg-6 col-12 text-lg-start text-center">
-      <h1>Olá!</h1>
-      <h4>Explore a vasta culinária de todas as regiões do Brasil e descubra receitas deliciosas que representam a cultura e a tradição de cada lugar.</h4>
+      <h1 class="fw-bold">Olá!</h1>
+      <h4 class="fw-normal">Explore a vasta culinária de todas as regiões do Brasil e descubra receitas deliciosas que representam a cultura e a tradição de cada lugar.</h4>
       <p>Seja para um almoço especial, um jantar descontraído ou uma sobremesa saborosa, temos a receita perfeita para cada momento. Embarque em uma jornada gastronômica única e experimente o melhor da culinária brasileira, com pratos típicos e inovadores de todos os estados!</p>
     </div>
 
-    <!-- CONTAINER 2: IMAGEM PULSANDO -->
-    <div class="col-lg-6 col-12 text-center">
-      <img src="img/favicon.ico" alt="Imagem pulsando" class="imagem-pulsando img-fluid">
-    </div>
+    <!-- CONTAINER 2: IMAGEM -->
+<div class="col-lg-6 col-12 text-center mt-4">
+  <img src="img/favicon.ico" alt="Imagem pulsando" class="img-fluid d-block mx-auto imagem-pulsando" style="max-width: 80%; height: auto;">
+</div>
+
   </div>
 </div>
+
 
 
 
