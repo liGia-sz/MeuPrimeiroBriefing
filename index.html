@@ -21,7 +21,20 @@
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
   <style>
-    /* Definindo a imagem de fundo */
+    /* Cor barra de menu */
+    .navbar {
+  background-color: #f7d9743b !important; 
+    }
+    /* Fundo branco Dropdown*/
+    .dropdown-menu {
+      background-color: #ffffff79 !important; 
+    }
+    /* Cor do texto Dropdown*/
+    .dropdown-item, .dropdown-item:hover {
+      color: #333 !important;   
+    }
+
+/* FONTE E IMG DE FUNDO  */
   body {
     background-image: url('img/Background.JPG'); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
@@ -31,23 +44,43 @@
     color: rgb(233, 223, 90);
   }
 
-    /* Definindo a animação de pulsar */
+    /* ANIMAÇÃO DE PULSAR */
     @keyframes pulsar {
       0% {
         transform: scale(1);
       }
       50% {
-        transform: scale(1.1); /* Aumenta um pouco o tamanho */
+        transform: scale(1.1); 
       }
       100% {
         transform: scale(1);
       }
     }
   
-    /* Aplicando a animação à imagem */
+    /* APLICANDO ANIMAÇÃO */
     .imagem-pulsando {
-      animation: pulsar 1s infinite; /* A animação ocorre a cada 2 segundos e se repete infinitamente */
+      animation: pulsar 1s infinite; 
       transition: transform 0.3s ease-in-out;
+    }
+
+    /* ESPAÇAMENTO CARDS */
+    .card {
+      margin: 15px; /* Espaçamento em torno de cada card */
+      border-radius: 0 0 15px 15px; /* Arredonda somente as bordas inferiores do corpo do card */
+    }
+
+    .card-body {
+      border-radius: 0 0 15px 15px; /* Arredonda somente as bordas inferiores do corpo do card */
+    }
+
+    .card {
+      border-radius: 15px; /* Valor ajustável para o grau de arredondamento */
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        margin: 10px; /* Menor margem em telas menores */
+      }
     }
   </style>
 </head>
@@ -65,12 +98,12 @@
 
           <li class="nav-item">
             <div class="container">
-              <a class="nav-link nav-hover h6" href="quemsomos.html">Quem somos</a>
+              <a class="nav-link nav-hover h6" href="quemsomos.html"><strong>Quem Somos</strong></a>
             </div>
           </li>
 
           <li class="nav-item ms-3 me-3 dropdown">
-            <a class="nav-link nav-hover h6" href="doces.html">Doces</a>
+            <a class="nav-link nav-hover h6" href="doces.html"><strong>Does</strong></a>
             <ul class="dropdown-menu border-warning">
               <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
               <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
@@ -87,7 +120,7 @@
           </li>
 
           <li class="nav-item ms-3 me-3 dropdown">
-            <a class="nav-link nav-hover h6" href="#" role="button">Salgados</a>
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Salgados</strong></a>
             <ul class="dropdown-menu border-warning">
               <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
               <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
@@ -103,7 +136,7 @@
           </li>
 
           <li class="nav-item ms-3 me-3 dropdown">
-            <a class="nav-link nav-hover h6" href="#" role="button">Bebidas</a>
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Bebidas</strong></a>
             <ul class="dropdown-menu border-warning">
               <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
               <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
@@ -119,7 +152,7 @@
           </li>
 
           <li class="nav-item ms-3 me-3 dropdown">
-            <a class="nav-link nav-hover h6" href="#" role="button">Carnes</a>
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Carnes</strong></a>
             <ul class="dropdown-menu border-warning">
               <li><a class="dropdown-item" href="carnes-sul.html">Sul</a></li>
               <li><a class="dropdown-item" href="carnes/carnes-sudeste.html">Sudeste</a></li>
@@ -135,7 +168,7 @@
           </li>
 
           <li class="nav-item ms-3 me-3 dropdown">
-            <a class="nav-link nav-hover h6" href="#" role="button">Saladas e molhos</a>
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Saladas e molhos</strong></a>
             <ul class="dropdown-menu border-warning">
               <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
               <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
@@ -179,8 +212,7 @@
 <div class="Título Top" style="text-align: center;">
   <h1>✳︎ As 5 receitas mais populares do nosso site! ✳︎</h1>
 </div> 
-
-  <div class="container my-4">
+  <div class="container my-6">
     <div class="card-group">
       
       <!-- Card 1 -->
@@ -236,33 +268,92 @@
     </div>
   </div>
 
-      <!--SEÇÃO CHAMATIVA "QUEM SOMOS"-->
-      <section class="quem-somos-section">
-        <div class="content">
-          <div class="Título Top">
-            <h1>Saiba Mais Sobre Nós!</h1>
-          </div> 
-          <p>Conheça nossa história e nossa paixão pelas receitas típicas brasileiras.</p>
-          <a href="quemsomos.html" class="btn btn-success w-20">Quem somos</a>
-        </div>
-      </section>      
+      <!-- "QUEM SOMOS" -->
+<div class="container my-2" style="display: flex; align-items: center; justify-content: space-between;">
+  <section class="quem-somos-section" style="flex: 1; text-align: left;">
+    <div class="texto.index">
+      <div class="Título Top">
+        <h1>Saiba Mais Sobre Nós!</h1>
+      </div> 
+      <p>Conheça nossa história e nossa paixão pelas receitas típicas brasileiras.</p>
+      <a href="quemsomos.html" class="btn btn-success w-20">Quem somos</a>
+    </div>
+  </section> 
 
+  <!-- Imagem à esquerda -->
+  <div class="quem-somos" style="flex: 1; text-align: left;">
+    <img src="img/quem.somos.index.PNG" alt="Quem Somos" style="max-width: 100%; height: auto;">
+  </div>
+</div>
 </main>
 
-<footer>
-  <div class="row align-items-center">
-    <div class="col-lg-6">
-        <div class="container p-5">
-            <h1>Nos dê um oi!</h1>
-            <p>olaCantinho@gmail.com.br</p>
-        </div>
+<!--FOOTER-->
+<!-- Footer -->
+ <footer>
+<div class="container-fluid py-4" style="border-top: 2px solid rgb(252, 252, 119);">
+  <div class="row">
+    
+    <!-- Coluna 1 - Lado esquerdo -->
+    <div class="col-lg-4 col-sm-12 text-start mb-3">
+      <img src="img/favicon.ico" class="mb-3" width="150px">
+      <h6><strong>Cozinhar é para todos.</strong></h6>
+      <p class="small">© Cantinho Brasileiro 2024. Todos os direitos reservados.</p>
     </div>
-</div>
 
-    <p>© Cantinho BRasileiro 2024</p>
+    <!-- Coluna 2 - Meio (com newsletter) -->
+    <div class="col-lg-4 col-sm-12 text-center mb-3">
+      <h5 class="mb-3"><strong>Entre em contato!</strong></h5>
+      <p>olaCantinho@gmail.com.br</p>
+
+      <!-- Newsletter -->
+      <div class="newsletter">
+        <h6><strong>Inscreva-se para nossa newsletter</strong></h6>
+        <form action="newsletter.php" method="POST">
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Seu e-mail" name="email" required>
+          </div>
+          <button type="submit" class="btn btn-success">Inscrever-se</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Coluna 3 - Lado direito (redes sociais) -->
+    <div class="col-lg-4 col-sm-12 text-end mb-3">
+      <h5 class="mb-3"><strong>Nos siga nas redes sociais</strong></h5>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/SenaiMG" target="_blank">
+          <img src="img/_FOOTER Facebook .png" alt="Facebook" style="width: 40px; height: 40px; margin-right: 10px;">
+        </a>
+        <a href="https://www.instagram.com/senaiminas" target="_blank">
+          <img src="img/_FOOTER Instagram.png" alt="Instagram" style="width: 40px; height: 40px; margin-right: 10px;">
+        </a>
+        <a href="https://x.com/senaimg" target="_blank">
+          <img src="img/_FOOTER Twitter.png" alt="Twitter" style="width: 40px; height: 40px; margin-right: 10px;">
+        </a>
+        <a href="https://www.youtube.com/c/SenaiMG" target="_blank">
+          <img src="img/_FOOTER youtube.png" alt="YouTube" style="width: 40px; height: 40px; margin-right: 10px;">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- TESTAR MODELO ABAIXO PARA LIVRO DE RECEITAS
+  <script>
+      // Função para adicionar itens à sacola
+      function adicionarSacola(nome, descricao) {
+          let sacola = JSON.parse(localStorage.getItem('sacola')) || [];
+          const item = { nome, descricao };
+          
+          sacola.push(item);
+          localStorage.setItem('sacola', JSON.stringify(sacola));
+      
+          alert(`${nome} foi adicionado à sua sacola.`);
+      }
+      </script> -->
 </footer>
-    </body>
-  </main>
+</main>
+  </body>
+  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
