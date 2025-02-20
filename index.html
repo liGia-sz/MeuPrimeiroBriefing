@@ -19,253 +19,222 @@
 
   <!--BOOTSTRAP ICONS-->
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <style>
+    /* Definindo a imagem de fundo */
+  body {
+    background-image: url('img/Background.JPG'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    font-family: "Lexend", serif;
+    color: rgb(233, 223, 90);
+  }
+
+    /* Definindo a animação de pulsar */
+    @keyframes pulsar {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1); /* Aumenta um pouco o tamanho */
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  
+    /* Aplicando a animação à imagem */
+    .imagem-pulsando {
+      animation: pulsar 1s infinite; /* A animação ocorre a cada 2 segundos e se repete infinitamente */
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
 </head>
 
+<header>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg border-bottom border-warning">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <div class="container">
+              <a class="nav-link nav-hover h6" href="quemsomos.html">Quem somos</a>
+            </div>
+          </li>
+
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="doces.html">Doces</a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Norte</a></li>
+
+              <li>
+                <hr class="dropdown-divider border-warning">
+              </li>
+
+              <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button">Salgados</a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Norte</a></li>
+
+              <li>
+                <hr class="dropdown-divider border-warning">
+              </li>
+              <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button">Bebidas</a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Norte</a></li>
+
+              <li>
+                <hr class="dropdown-divider border-warning">
+              </li>
+              <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button">Carnes</a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="carnes-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="carnes/carnes-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="carnes-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="carnes-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="carnes-norte.html">Norte</a></li>
+
+              <li>
+                <hr class="dropdown-divider border-warning">
+              </li>
+              <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button">Saladas e molhos</a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="pastadeslaoque.html">Norte</a></li>
+
+              <li>
+                <hr class="dropdown-divider border-warning">
+              </li>
+              <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="navbar-brand mx-4 tooltip-recado" href="livro.html" data-recado="Suas receitas favoritas!"> <!--Logo livro de receitas-->
+          <img src="img/receitas.fav.png" alt="Cantinho" width="50" height="50">
+      </a>  
+    </li>
+    </div>
+  </nav>
+</header>
+
 <body>
+ <!-- CONTAINER PRINCIPAL: TEXTO E IMAGEM -->
+<div class="container my-2" style="display: flex; align-items: center; justify-content: space-between;">
+  <!-- CONTAINER 1: TEXTO SOBRE O SITE -->
+  <div class="texto.index" style="text-align: left; flex: 1;">
+    <h1>Olá!</h1>
+    <h4>Explore a vasta culinária de todas as regiões do Brasil e descubra receitas deliciosas que representam a cultura e a tradição de cada lugar.</h4>
+    <p>Seja para um almoço especial, um jantar descontraído ou uma sobremesa saborosa, temos a receita perfeita para cada momento. Embarque em uma jornada gastronômica única e experimente o melhor da culinária brasileira, com pratos típicos e inovadores de todos os estados!</p>
+  </div>
 
-  <header>
-    <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg border-bottom border-warning">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <!-- CONTAINER 2: IMAGEM PULSANDO -->
+  <div class="imagem.index" style="flex: 1; text-align: right;">
+    <img src="img/favicon.ico" alt="Imagem pulsando" class="imagem-pulsando">
+  </div>
+</div>
 
-            <li class="nav-item">
-              <div class="container">
-                <a class="nav-link nav-hover h6 text-dark" href="quemsomos.html">Quem somos</a>
-              </div>
-            </li>
+</body>
+<!--BLOCO DE CARDS PARA FAVORITOS DO SITE-->
+<div class="Título Top" style="text-align: center;">
+  <h1>✳︎ As 5 receitas mais populares do nosso site! ✳︎</h1>
+</div> 
 
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="doces.html">Doces</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Salgados</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item mx-auto">
-              <a class="navbar-brand" href="index.html">
-            <a class="navbar-brand mx-4" href="index.html"> <!--Logo navbar-->
-              <img src="img/logo.png" alt="Cantinho" width="95" height="95">
-          </a>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Bebidas</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Carnes</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="carnes-sul.html">Sul</a></li>
-                <li><a class="dropdown-item" href="carnes/carnes-sudeste.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="carnes-centro-oeste.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="carnes-nordeste.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="carnes-norte.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Saladas e molhos</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-          </ul>
-          <a class="navbar-brand mx-4 tooltip-recado" href="index.html" data-recado="Voltar à página inicial"> <!--Logo livro de receitas-->
-            <img src="img/receitas.fav.png" alt="Cantinho" width="50" height="50">
-        </a>  
-      </li>
-      </div>
-    </nav>
-  </header>
-
-  <!--CARROSSEL-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-            aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/Carrossel-Sul.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Região Sul - Chimarrão</h3>
-              <h4>Símbolo da amizade, o chimarrão é compartilhado entre amigos há gerações!</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/Carrossel-Sudeste.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Região Sudeste - Pão de Queijo</h3>
-              <h4>A iguaria mineira que nasceu nos fornos coloniais e conquistou o Brasil!</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/Carrossel-Centro-Oeste.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Região Centro Oeste - Arroz Doce</h3>
-              <h4>Doce tradicional com raízes indígenas e europeias, é presença certa nas festas juninas!</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/Carrossel-Nordeste.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Região Nordeste - Acarajé</h3>
-              <h4>Do sagrado ao popular, o acarajé é patrimônio cultural e delícia de origem africana!</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrossel-Norte.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Região Norte - Tacacá</h3>
-              <h4>Caldo quente e saboroso, o tacacá é feito com tucupi e jambu, que ‘anestesia’ a língua!</h4>
-            </div>
-          </div>
-        </div>
-
-      <!--Botões do Carrossel-->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      <!--TEXTO ANIMADO-->
-      <div class="texto-animado">
-        <p>Cozinhe como um Brasileiro! Receitas autênticas de todas as regiões do Brasil</p>
-      </div>  
+  <div class="container my-4">
+    <div class="card-group">
       
-      <main>
-      <!--BLOCO DE CARDS PARA FAVORITOS DO SITE-->
-      <div class="Título Top" style="text-align: center;">
-        <h1>✳︎ Confira as 5 receitas mais populares do nosso site! ✳︎</h1>
-      </div> 
-
-        <div class="container my-4">
-          <div class="card-group">
-            
-            <!-- Card 1 -->
-            <div class="card">
-              <img src="img/TOP1 - Feijoada.Camadas.png" class="card-img-top" alt="Receita 1">
-              <div class="card-body">
-                <h5 class="card-title">Feijoada em Camadas</h5>
-                <p class="card-text">Receita Original!</p>
-                <a href="receita1.html" class="btn btn-warning w-30" style="align-items: end;">Receita</a> <!-- Botão para ver a receita -->
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="card">
-              <img src="img/TOP2 - Marido Gelado.png" class="card-img-top" alt="Receita 2">
-              <div class="card-body">
-                <h5 class="card-title">Marido Gelado</h5>
-                <p class="card-text">A sobremesa perfeita para toda a família.</p>
-                <a href="receita1.html" class="btn btn-warning w-30" style="position: bottom;">Receita</a> <!-- Botão para ver a receita -->
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="card">
-              <img src="img/TOP3 - Salada Tropical.png" class="card-img-top" alt="Receita 3">
-              <div class="card-body">
-                <h5 class="card-title">Salada Tropical</h5>
-                <p class="card-text">Uma salada divertida e nutritiva!</p>
-                <a href="receita1.html" class="btn btn-warning w-30">Receita</a> <!-- Botão para ver a receita -->
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="card">
-              <img src="img/TOP 4 - torta-de-morango-e-bolacha-champagne.webp" class="card-img-top" alt="Receita 4">
-              <div class="card-body">
-                <h5 class="card-title">Torata de Morango</h5>
-                <p class="card-text">Torta com biscoitos champagne.</p>
-                <a href="receita1.html" class="btn btn-warning w-30">Receita</a> <!-- Botão para ver a receita -->
-              </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="card">
-              <img src="img/TOP 5 - barrig-de-porco-Assada-com-Batata-.jpg" class="card-img-top" alt="Receita 5">
-              <div class="card-body">
-                <h5 class="card-title">Barriga de Porco</h5>
-                <p class="card-text">Carne soltinha e saborosa, acompanhada de batatas.</p>
-                <a href="receita1.html" class="btn btn-warning w-30">Receita</a> <!-- Botão para ver a receita -->
-              </div>
-            </div>
-
-          </div>
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="img/TOP1 - Feijoada.Camadas.png" class="card-img-top" alt="Receita 1">
+        <div class="card-body">
+          <h5 class="card-title">Feijoada em Camadas</h5>
+          <p class="card-text">Receita Original!</p>
+          <a href="receita1.html" class="btn btn-warning w-30" style="align-items: end;">Receita</a> <!-- Botão para ver a receita -->
         </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="img/TOP2 - Marido Gelado.png" class="card-img-top" alt="Receita 2">
+        <div class="card-body">
+          <h5 class="card-title">Marido Gelado</h5>
+          <p class="card-text">A sobremesa perfeita para toda a família.</p>
+          <a href="receita1.html" class="btn btn-warning w-30" style="position: bottom;">Receita</a> <!-- Botão para ver a receita -->
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="img/TOP3 - Salada Tropical.png" class="card-img-top" alt="Receita 3">
+        <div class="card-body">
+          <h5 class="card-title">Salada Tropical</h5>
+          <p class="card-text">Uma salada divertida e nutritiva!</p>
+          <a href="receita1.html" class="btn btn-warning w-30">Receita</a> <!-- Botão para ver a receita -->
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="img/TOP 4 - torta-de-morango-e-bolacha-champagne.webp" class="card-img-top" alt="Receita 4">
+        <div class="card-body">
+          <h5 class="card-title">Torta de Morango</h5>
+          <p class="card-text">Torta com biscoitos champagne.</p>
+          <a href="receita1.html" class="btn btn-warning w-30">Receita</a> <!-- Botão para ver a receita -->
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="img/TOP 5 - barrig-de-porco-Assada-com-Batata-.jpg" class="card-img-top" alt="Receita 5">
+        <div class="card-body">
+          <h5 class="card-title">Barriga de Porco</h5>
+          <p class="card-text">Carne soltinha e saborosa, acompanhada de batatas.</p>
+          <a href="receita1.html" class="btn btn-warning w-30">Receita</a> <!-- Botão para ver a receita -->
+        </div>
+      </div>
+
+    </div>
+  </div>
 
       <!--SEÇÃO CHAMATIVA "QUEM SOMOS"-->
       <section class="quem-somos-section">
@@ -278,18 +247,18 @@
         </div>
       </section>      
 
-      <div class="row align-items-center">
-
-        <div class="col-lg-6">
-            <div class="container p-5">
-                <h1>Nos dê um oi!</h1>
-                <p>olaCantinho@gmail.com.br</p>
-            </div>
-        </div>
-    </div>
 </main>
 
 <footer>
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+        <div class="container p-5">
+            <h1>Nos dê um oi!</h1>
+            <p>olaCantinho@gmail.com.br</p>
+        </div>
+    </div>
+</div>
+
     <p>© Cantinho BRasileiro 2024</p>
 </footer>
     </body>
