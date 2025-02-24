@@ -1,181 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cantinho BRasileiro</title>
+
+  <!-- LINK BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS LOCAL -->
   <link rel="stylesheet" href="./style.css">
 
-  <!-- Link para Font Awesome (CDN) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMWx/w17N1yFCO7xzBf6VobH6lcxXoY8s+g8V4R" crossorigin="anonymous">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-  <!--Bootstrap Icons-->
+  <!--BOOTSTRAP ICONS-->
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-</head>
 
-<body>
+  <style>
+    /* Cor barra de menu */
+    .navbar {
+  background-color: #f7d9743b !important; 
+    }
+    /* Fundo branco Dropdown*/
+    .dropdown-menu {
+      background-color: #ffffff79 !important; 
+    }
+    /* Cor do texto Dropdown*/
+    .dropdown-item, .dropdown-item:hover {
+      color: #333 !important;   
+    }
+
+/* FONTE E IMG DE FUNDO  */
+  body {
+    background-image: url('img/Background.JPG'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    font-family: "Lexend", serif;
+    color: rgb(233, 223, 90);
+  }
+
+  /*Footer*/
+  .social-icons a {
+  outline: none;
+  text-decoration: none;
+}
+</style>
+</head>
 
   <header>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg border-bottom border-warning">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <nav class="navbar navbar-expand-lg border-bottom border-warning">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <li class="nav-item">
-              <div class="container">
-                <a class="nav-link nav-hover h6 text-dark" href="quemsomos.html">Quem somos</a>
-              </div>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="doces.html">Doces</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="Doces/doces-sul.html">Sul</a></li>
-                <li><a class="dropdown-item" href="Doces/doces-sudeste.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="Doces/doces-centro-oeste.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="Doces/doces-Nordeste.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="Doces/doces-Norte.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Salgados</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item mx-auto">
-              <a class="navbar-brand" href="index.html">
-                <a class="navbar-brand mx-4" href="index.html"> <!--Logo navbar-->
-                  <img src="img/logo.png" alt="Cantinho" width="95" height="95">
-                </a>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Bebidas</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Carnes</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="carnes-sul.html">Sul</a></li>
-                <li><a class="dropdown-item" href="carnes-sudeste.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="carnes-centro-oeste.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="carnes-nordeste.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="carnes-norte.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Saladas e molhos</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sul</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="pastadeslaoque.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-          </ul>
-
-          <a class="navbar-brand mx-4 tooltip-recado" href="index.html" data-recado="Voltar à página inicial">
-            <!--Logo livro de receitas-->
-            <img src="img/receitas.fav.png" alt="Cantinho" width="50" height="50">
-          </a>
-
+          <li class="nav-item">
+            <div class="container">
+              <a class="nav-link nav-hover h6" href="quemsomos.html"><strong>Quem Somos</strong></a>
+            </div>
           </li>
 
-        </div>
-    </nav>
-  </header>
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="doces.html"><strong>Doces</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="Doces/doces-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="Doces/doces-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="Doces/doces-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="Doces/doces-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="Doces/doces-norte.html">Norte</a></li>
+            </ul>
+          </li>
 
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Salgados</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="Salgados/salgados-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="Salgados/salgados-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="Salgados/salgados-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="Salgados/salgados-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="Salgados/salgados-norte.html">Norte</a></li>
+            </ul>
+          </li>
 
-  <main>
-    <div class="text-center">
-      <img src="../img/img-quem-somos.jpg" class="rounded" alt="..." width="1000" height="700">
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Bebidas</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="Bebidas/bebidas-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="Bebidas/bebidas-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="Bebidas/bebidas-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="Bebidas/bebidas-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="Bebidas/bebidas-norte.html">Norte</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Carnes</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="Carnes/carnes-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="Carnes/carnes-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="Carnes/carnes-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="Carnes/carnes-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="Carnes/carnes-norte.html">Norte</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Saladas e molhos</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="Sal-Mol/s.m-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="Sal-Mol/s.m-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="Sal-Mol/s.m-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="Sal-Mol/s.m-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="Sal-Mol/s.m-norte.html">Norte</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="navbar-brand mx-4 tooltip-recado" href="livro.html" data-recado="Suas receitas favoritas!"> <!--Logo livro de receitas-->
+          <img src="img/receitas.fav.png" alt="Cantinho" width="50" height="50">
+      </a>  
+    </li>
     </div>
-    <div class="text-center">
-      <p>
-      <h1 class="titulo"> Conheça a Gente!</h1>
-      </p>
-      <div class="container">
-        <p>
-        <h4>Somos um site dedicado a celebrar e compartilhar a rica e diversificada culinária brasileira, trazendo à
-          tona os sabores e tradições de todas as regiões do país. Aqui, você encontra receitas autênticas. Do Pão de
-          Queijo do Sudeste
-          ao acarajé do Nordeste, passando pelo clássico arroz doce do Centro-Oeste, ao saboroso chimarrão do Sul e o
-          tacaca do Norte, nossa missão é resgatar e divulgar as iguarias que
-          encantam e alimentam as pessoas por todo o território nacional e internacional.</h4>
-        </p>
+  </nav>
+</header>
 
+<body>
+  <main>
+<!-- CONTAINER PRINCIPAL: TEXTO 1 E IMAGEM -->
+<div class="container my-2">
+  <div class="row align-items-center">
+    <!-- CONTAINER 1: TEXTO SOBRE O SITE -->
+    <div class="col-lg-6 col-12 text-lg-start text-center">
+      <h1 class="fw-bold">Conheça a Gente!</h1>
+      <h4 class="fw-normal">Somos um site dedicado a celebrar e compartilhar a rica e diversificada culinária brasileira, trazendo à
+        tona os sabores e tradições de todas as regiões do país.</h4>
+    </div>
 
-        <p>
-        <h4>Com o intuito de aproximar todos dos sabores regionais, nosso site é um espaço onde qualquer pessoa, seja
-          iniciante ou cozinheiro experiente, pode aprender a preparar pratos que vão de simples delícias do cotidiano a
-          receitas sofisticadas. Junte-se a nós nessa jornada para descobrir, criar e se
-          apaixonar pela culinária que faz do Brasil um verdadeiro festim de sabores!</h4>
-        </p>
+    <!-- CONTAINER 2: IMAGEM -->
+<div class="col-lg-6 col-12 text-center mt-4">
+  <img src="img/1-Quem somos.png" alt="Imagem pulsando" class="img-fluid d-block mx-auto imagem-pulsando" style="max-width: 80%; height: auto;">
+</div>
+  </div>
+</div>
+
+<!-- CONTAINER PRINCIPAL: TEXTO 2 E IMAGEM -->
+<div class="container my-2">
+  <div class="row align-items-center">
+    <!-- CONTAINER 1: IMAGEM -->
+    <div class="col-lg-6 col-12 text-center mt-4">
+      <img src="img/2-Quem somos.png" alt="Imagem pulsando" class="img-fluid d-block mx-auto imagem-pulsando" style="max-width: 80%; height: auto;">
+    </div>
+
+    <!-- CONTAINER 2: TEXTO SOBRE O SITE -->
+    <div class="col-lg-6 col-12 text-lg-start text-center">
+      <h1 class="fw-bold">A Cozinha é Para Todos!</h1>
+      <h4 class="fw-normal">Com o intuito de aproximar todos dos sabores regionais, nosso site é um espaço onde qualquer pessoa, seja
+        iniciante ou cozinheiro experiente, pode aprender a preparar pratos que vão de simples delícias do cotidiano a
+        receitas sofisticadas. Junte-se a nós nessa jornada para descobrir, criar e se
+        apaixonar pela culinária que faz do Brasil um verdadeiro festim de sabores!</h4>
+    </div>
+  </div>
+</div>
+
+          
+<!-- CONTAINER PRINCIPAL: TEXTO 3 E IMAGEM -->
+<div class="container my-2">
+  <div class="row align-items-center">
+    <!-- CONTAINER 1: TEXTO SOBRE O SITE -->
+    <div class="col-lg-6 col-12 text-lg-start text-center">
+      <h1 class="fw-bold">Receitas Autênticas de Todo o Brasil</h1>
+      <h4 class="fw-normal">Do Pão de Queijo do Sudeste
+        ao acarajé do Nordeste, passando pelo clássico arroz doce do Centro-Oeste, ao saboroso chimarrão do Sul e o
+        tacaca do Norte, nossa missão é resgatar e divulgar as iguarias que
+        encantam e alimentam as pessoas por todo o território nacional e internacional.</h4>
+    </div>
+
+    <!-- CONTAINER 2: IMAGEM -->
+<div class="col-lg-6 col-12 text-center mt-4">
+  <img src="img/3-Quem somos.png" alt="Imagem pulsando" class="img-fluid d-block mx-auto imagem-pulsando" style="max-width: 80%; height: auto;">
+</div>
+  </div>
+</div>
       </div>
     </div>
   </main>
 
 
-  <footer>
-    <p>© Cantinho BRasileiro 2024</p>
-  </footer>
-
+  <!--FOOTER-->
+ <footer>
+  <div class="container-fluid py-4" style="border-top: 2px solid rgb(252, 252, 119);">
+    <div class="row">
+      
+      <!-- Coluna 1 - Lado esquerdo -->
+      <div class="col-lg-4 col-sm-12 text-start mb-3">
+        <img src="img/favicon.ico" class="mb-3" width="150px">
+        <h6><strong>Cozinhar é para todos.</strong></h6>
+        <p class="small">© Cantinho Brasileiro 2024. Todos os direitos reservados.</p>
+      </div>
+  
+      <!-- Coluna 2 - Meio (com newsletter) -->
+      <div class="col-lg-4 col-sm-12 text-center mb-3">
+        <h5 class="mb-3"><strong>Entre em contato!</strong></h5>
+        <p>olaCantinho@gmail.com.br</p>
+  
+        <!-- Newsletter -->
+        <div class="newsletter">
+          <h6><strong>Inscreva-se para nossa newsletter</strong></h6>
+          <form action="newsletter.php" method="POST">
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Seu e-mail" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-success">Inscrever-se</button>
+          </form>
+        </div>
+      </div>
+  
+      <!-- Coluna 3 - Redes Sociais -->
+      <div class="col-lg-4 col-sm-12 text-end mb-3">
+        <h5 class="mb-3"><strong>Nos siga nas redes sociais</strong></h5>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/SenaiMG" target="_blank">
+            <img src="img/FOOTER Facebook.png" alt="Facebook" style="width: 40px; height: 40px; margin-right: 10px;">
+          </a>
+          <a href="https://www.instagram.com/senaiminas" target="_blank">
+            <img src="img/FOOTER Instagram.png" alt="Instagram" style="width: 40px; height: 40px; margin-right: 10px;">
+          </a>
+          <a href="https://x.com/senaimg" target="_blank">
+            <img src="img/FOOTER Twitter.png" alt="Twitter" style="width: 40px; height: 40px; margin-right: 10px;">
+          </a>
+          <a href="https://www.youtube.com/c/SenaiMG" target="_blank">
+            <img src="img/FOOTER youtube.png" alt="YouTube" style="width: 40px; height: 40px; margin-right: 10px;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </body>
-
-
 </html>
