@@ -76,7 +76,7 @@
       border-radius: 15px;
       overflow: hidden;
       /* Garante que as bordas arredondadas funcionem corretamente */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(83, 65, 41, 0.1);
       /* Adiciona um leve sombreamento */
     }
 
@@ -91,6 +91,7 @@
     }
 
     .modal-content {
+      color: rgb(56, 41, 12);
       border-radius: 15px;
     }
 
@@ -220,6 +221,7 @@
   <!-- FAVORITOS DO SITE-->
   <div class="Título Top" style="text-align: center;">
     <h1>✳︎ As 5 receitas mais populares do nosso site! ✳︎</h1>
+    <h3>Clique na Receita e descubra o passo-a-passo!</h3>
   </div>
 
   <div class="container my-6">
@@ -484,23 +486,23 @@
 </body>
 
 <!-- "QUEM SOMOS" -->
-<div class="container my-2" style="display: flex; align-items: center; justify-content: space-between;">
-  <section class="quem-somos-section" style="flex: 1; text-align: left;">
-    <div class="texto.index">
-      <div class="Título Top">
+<section class="somos" style="align-items: center;">
+  <div class="container my-2 align-items-center">
+    <div class="row d-flex align-items-center">
+      <!-- TEXTO: "Saiba Mais Sobre Nós" -->
+      <div class="col-md-6 col-12 text-md-start text-center">
         <h1>Saiba Mais Sobre Nós!</h1>
+        <p>Conheça nossa história e nossa paixão pelas receitas típicas brasileiras.</p>
+        <a href="quemsomos.html" class="btn btn-success">Quem somos</a>
       </div>
-      <p>Conheça nossa história e nossa paixão pelas receitas típicas brasileiras.</p>
-      <a href="quemsomos.html" class="btn btn-success w-20">Quem somos</a>
-    </div>
 
-    <!-- Imagem à esquerda -->
-    <div class="quem-somos" style="flex: 1; text-align: left;">
-      <img src="img/quem.somos.index.PNG" alt="Quem Somos" style="max-width: 100%; height: auto;">
+      <!-- IMAGEM: Quem Somos -->
+      <div class="col align-items-center">
+        <img src="img/quem.somos.index.PNG" alt="Quem Somos" class="img-fluid" style="max-width: 100%; height: auto;">
+      </div>
     </div>
-</div>
+  </div>
 </section>
-
 
 
 <!-- Script de Download e Adição ao Livro -->
@@ -527,18 +529,18 @@
 
 <!--FOOTER-->
 <footer>
-  <div class="container-fluid py-4" style="border-top: 2px solid rgb(252, 252, 119);">
-    <div class="row">
+  <div class="container my-4" style="max-width: 1200px; border-top: 2px solid rgb(252, 252, 119); background-color: aquamarine; margin: 0 auto;">
+    <div class="row text-center text-lg-start">
 
       <!-- Coluna 1 - Lado esquerdo -->
-      <div class="col-lg-4 col-sm-12 text-start mb-3">
+      <div class="col-lg-4 col-md-4 col-12 mb-2">
         <img src="img/favicon.ico" class="mb-3" width="150px">
         <h6><strong>Cozinhar é para todos.</strong></h6>
         <p class="small">© Cantinho Brasileiro 2024. Todos os direitos reservados.</p>
       </div>
 
       <!-- Coluna 2 - Meio (com newsletter) -->
-      <div class="col-lg-4 col-sm-12 text-center mb-3">
+      <div class="col-lg-4 col-md-4 col-12 mb-2">
         <h5 class="mb-3"><strong>Entre em contato!</strong></h5>
         <p>olaCantinho@gmail.com.br</p>
 
@@ -546,7 +548,7 @@
         <div class="newsletter">
           <h6><strong>Inscreva-se para nossa newsletter</strong></h6>
           <form action="newsletter.php" method="POST">
-            <div class="mb-3">
+            <div class="mb-2">
               <input type="email" class="form-control" placeholder="Seu e-mail" name="email" required>
             </div>
             <button type="submit" class="btn btn-success">Inscrever-se</button>
@@ -555,7 +557,7 @@
       </div>
 
       <!-- Coluna 3 - Redes Sociais -->
-      <div class="col-lg-4 col-sm-12 text-end mb-3">
+      <div class="col-lg-4 col-md-4 col-12 mb-2">
         <h5 class="mb-3"><strong>Nos siga nas redes sociais</strong></h5>
         <div class="social-icons">
           <a href="https://www.facebook.com/SenaiMG" target="_blank">
@@ -572,6 +574,7 @@
           </a>
         </div>
       </div>
+
     </div>
   </div>
 </footer>
