@@ -9,13 +9,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- CSS LOCAL -->
+  <!-- CSS LOCAL -->
   <link rel="stylesheet" href="./style.css">
 
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
   <!--BOOTSTRAP ICONS-->
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -23,66 +23,82 @@
   <style>
     /* Cor barra de menu */
     .navbar {
-  background-color: #f7d9743b !important; 
+      background-color: #f7d9743b !important;
     }
+
     /* Fundo branco Dropdown*/
     .dropdown-menu {
-      background-color: #ffffff79 !important; 
+      background-color: #ffffff79 !important;
     }
+
     /* Cor do texto Dropdown*/
-    .dropdown-item, .dropdown-item:hover {
-      color: #333 !important;   
+    .dropdown-item,
+    .dropdown-item:hover {
+      color: #333 !important;
     }
 
-/* FONTE E IMG DE FUNDO  */
-  body {
-    background-image: url('img/Background.JPG'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
-    background-position: center center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
-    font-family: "Lexend", serif;
-    color: rgb(233, 223, 90);
-  }
+    /* FONTE E IMG DE FUNDO  */
+    body {
+      background-image: url('img/Background.JPG');
+      /* Substitua pelo caminho da sua imagem */
+      background-size: cover;
+      /* Ajusta a imagem para cobrir toda a tela */
+      background-position: center center;
+      /* Centraliza a imagem */
+      background-repeat: no-repeat;
+      /* Evita a repetição da imagem */
+      font-family: "Lexend", serif;
+      color: rgb(233, 223, 90);
+    }
 
-  .imagem-pulsando {
-  animation: pulsar 2s infinite ease-in-out;
-}
+    .imagem-pulsando {
+      animation: pulsar 2s infinite ease-in-out;
+    }
 
-@keyframes pulsar {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+    @keyframes pulsar {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
 
     /* ESPAÇAMENTO CARDS */
     .card {
-      margin-right: 55px; /* Espaçamento em torno de cada card */
+      width: 18rem;
+      cursor: pointer;
+      border-radius: 15px;
+      overflow: hidden;
+      /* Garante que as bordas arredondadas funcionem corretamente */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* Adiciona um leve sombreamento */
     }
 
-    .card-body {
-      border-radius: 0 0 35px 35px; /* Arredonda somente as bordas inferiores do corpo do card */
-      border-radius: 35px;
+    .card img {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
     }
 
+    .row {
+      gap: 40px;
+      /* Espaçamento uniforme entre os cards */
+    }
 
-    @media (max-width: 768px) {
-      .card {
-        margin: 10px; /* Menor margem em telas menores */
-      }
+    .modal-content {
+      border-radius: 15px;
     }
 
     /*Footer*/
     .social-icons a {
-  outline: none;
-  text-decoration: none;
-}
-
+      outline: none;
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -164,277 +180,306 @@
             </ul>
           </li>
         </ul>
-        <a class="navbar-brand mx-4 tooltip-recado" href="livro.html" data-recado="Suas receitas favoritas!"> <!--Logo livro de receitas-->
+        <a class="navbar-brand mx-4 tooltip-recado" href="livro.html" data-recado="Suas receitas favoritas!">
+          <!--Logo livro de receitas-->
           <img src="img/receitas.fav.png" alt="Cantinho" width="50" height="50">
-      </a>  
-    </li>
-    </div>
+        </a>
+        </li>
+      </div>
   </nav>
 </header>
 
 <body>
- <!-- CONTAINER PRINCIPAL: TEXTO E IMAGEM -->
-<div class="container my-2">
-  <div class="row align-items-center">
+  <!-- CONTAINER PRINCIPAL: TEXTO E IMAGEM -->
+<div class="container my-3">
+  <div class="row d-flex justify-content-between">
     <!-- CONTAINER 1: TEXTO SOBRE O SITE -->
-    <div class="col-lg-6 col-12 text-lg-start text-center">
+    <div class="col-lg-6 col text-lg-start my-5 order-lg-1">
       <h1 class="fw-bold">Olá!</h1>
-      <h4 class="fw-normal">Explore a vasta culinária de todas as regiões do Brasil e descubra receitas deliciosas que representam a cultura e a tradição de cada lugar.</h4>
-      <p>Seja para um almoço especial, um jantar descontraído ou uma sobremesa saborosa, temos a receita perfeita para cada momento. Embarque em uma jornada gastronômica única e experimente o melhor da culinária brasileira, com pratos típicos e inovadores de todos os estados!</p>
+      <h4 class="fw-normal">
+        Explore a vasta culinária de todas as regiões do Brasil e descubra receitas deliciosas que representam a
+        cultura e a tradição de cada lugar.
+      </h4>
+      <p>
+        Seja para um almoço especial, um jantar descontraído ou uma sobremesa saborosa, temos a receita perfeita para
+        cada momento.
+        Embarque em uma jornada gastronômica única e experimente o melhor da culinária brasileira, com pratos típicos
+        e inovadores de todos os estados!
+      </p>
     </div>
 
     <!-- CONTAINER 2: IMAGEM -->
-<div class="col-lg-6 col-12 text-center mt-4">
-  <img src="img/favicon.ico" alt="Imagem pulsando" class="img-fluid d-block mx-auto imagem-pulsando" style="max-width: 80%; height: auto;">
-</div>
+    <div class="col text-center order-lg-2">
+      <img src="img/favicon.ico" alt="Imagem pulsando" class="img-fluid imagem-pulsando"
+        style="max-width: 90%; height: auto;">
+    </div>
   </div>
 </div>
 
-<!-- FAVORITOS DO SITE-->
-<div class="Título Top" style="text-align: center;">
-  <h1>✳︎ As 5 receitas mais populares do nosso site! ✳︎</h1>
-</div> 
+
+  <!-- FAVORITOS DO SITE-->
+  <div class="Título Top" style="text-align: center;">
+    <h1>✳︎ As 5 receitas mais populares do nosso site! ✳︎</h1>
+  </div>
+
   <div class="container my-6">
     <div class="card-group">
-   
-<!-- Container para alinhar os cards em uma linha -->
-<div class="container-fluid my-5">
-  <div class="row d-flex justify-content-center flex-wrap">
-<!-- FEIJOADA EM CAMADAS -->
-<div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 20px; margin-right: 40px;">
-  <div class="card mx-auto" style="width: 18rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#feijoadaModal">
-    <img src="img/TOP1 - Feijoada.Camadas.png" class="card-img-top" alt="Feijoada em Camadas">
-    <div class="card-body">
-      <h5 class="card-title">Feijoada em Camadas</h5>
-      <p class="card-text">Clique para ver a receita completa!</p>
-    </div>
-  </div>
-</div>
-<!-- Modal de Feijoada-->
-<div class="modal fade" id="feijoadaModal" tabindex="-1" aria-labelledby="feijoadaModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="feijoadaModalLabel">Receita de Feijoada em Camadas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-start" id="recipeContent">
-        <h6>Ingredientes:</h6>
-        <ul>
-          <li>500g de feijão preto</li>
-          <li>300g de carne-seca dessalgada</li>
-          <li>200g de linguiça calabresa fatiada</li>
-          <li>200g de costelinha de porco</li>
-          <li>1 cebola picada</li>
-          <li>3 dentes de alho amassados</li>
-          <li>Sal, pimenta-do-reino e cheiro-verde a gosto</li>
-          <li>Arroz branco e farofa para acompanhar</li>
-        </ul>
+      <!-- Container que alinha os cards em uma linha -->
+      <div class="container-fluid my-7">
+        <div class="row d-flex justify-content-center flex-wrap">
+          <!-- FEIJOADA EM CAMADAS -->
+          <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 5px; margin-right: 1px;">
+            <div class="card mx-auto" style="width: 15rem; cursor: pointer;" data-bs-toggle="modal"
+              data-bs-target="#feijoadaModal">
+              <img src="img/TOP1 - Feijoada.Camadas.png" class="card-img-top" alt="Feijoada em Camadas">
+              <div class="card-body">
+                <h5 class="card-title">Feijoada Camadas</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Modal de Feijoada-->
+          <div class="modal fade" id="feijoadaModal" tabindex="-1" aria-labelledby="feijoadaModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="feijoadaModalLabel">Receita de Feijoada em Camadas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start" id="recipeContent">
+                  <h6>Ingredientes:</h6>
+                  <ul>
+                    <li>500g de feijão preto</li>
+                    <li>300g de carne-seca dessalgada</li>
+                    <li>200g de linguiça calabresa fatiada</li>
+                    <li>200g de costelinha de porco</li>
+                    <li>1 cebola picada</li>
+                    <li>3 dentes de alho amassados</li>
+                    <li>Sal, pimenta-do-reino e cheiro-verde a gosto</li>
+                    <li>Arroz branco e farofa para acompanhar</li>
+                  </ul>
 
-        <h6>Modo de Preparo:</h6>
-        <ol>
-          <li>Cozinhe o feijão até ficar macio.</li>
-          <li>Em uma panela separada, frite a carne-seca, a costelinha e a linguiça.</li>
-          <li>Refogue a cebola e o alho até dourar, depois misture as carnes e o feijão.</li>
-          <li>Em um refratário, monte as camadas: arroz, feijoada e farofa, repetindo o processo.</li>
-          <li>Finalize com cheiro-verde por cima e sirva quente.</li>
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Feijoada')">Adicionar ao Livro de Receitas</button>
-        <button type="button" class="btn btn-success" onclick="downloadRecipe()">Baixar Receita</button>
-      </div>
-    </div>
-  </div>
-</div>
+                  <h6>Modo de Preparo:</h6>
+                  <ol>
+                    <li>Cozinhe o feijão até ficar macio.</li>
+                    <li>Em uma panela separada, frite a carne-seca, a costelinha e a linguiça.</li>
+                    <li>Refogue a cebola e o alho até dourar, depois misture as carnes e o feijão.</li>
+                    <li>Em um refratário, monte as camadas: arroz, feijoada e farofa, repetindo o processo.</li>
+                    <li>Finalize com cheiro-verde por cima e sirva quente.</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Feijoada')">Adicionar ao Livro
+                    de Receitas</button>
+                  <button type="button" class="btn btn-success" onclick="downloadRecipe()">Baixar Receita</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<!-- MARIDO GELADO -->
-<div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 20px; margin-right: 40px;">
-  <div class="card mx-auto" style="width: 18rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#maridoGeladoModal">
-    <img src="img/TOP2 - Marido Gelado.png" class="card-img-top" alt="Marido Gelado">
-    <div class="card-body">
-      <h5 class="card-title">Marido Gelado</h5>
-      <p class="card-text">Clique para ver a receita completa!</p>
-    </div>
-  </div>
-</div>
-<!-- Modal de Marido Gelado -->
-<div class="modal fade" id="maridoGeladoModal" tabindex="-1" aria-labelledby="maridoGeladoModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="maridoGeladoModalLabel">Receita de Marido Gelado</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-start" id="maridoGeladoContent">
-        <h6>Ingredientes:</h6>
-        <ul>
-          <li>1 lata de leite condensado</li>
-          <li>2 latas de leite (use a lata de leite condensado como medida)</li>
-          <li>2 gemas</li>
-          <li>2 colheres de sopa de amido de milho</li>
-          <li>1 pacote de biscoito maisena</li>
-          <li>1 xícara de leite para molhar os biscoitos</li>
-          <li>1 lata de creme de leite</li>
-          <li>100g de chocolate em pó</li>
-          <li>Chocolate granulado para decorar</li>
-        </ul>
+          <!-- MARIDO GELADO -->
+          <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 5px; margin-right: 1px;">
+            <div class="card mx-auto" style="width: 15rem; cursor: pointer;" data-bs-toggle="modal"
+              data-bs-target="#maridoGeladoModal">
+              <img src="img/TOP2 - Marido Gelado.png" class="card-img-top" alt="Marido Gelado">
+              <div class="card-body">
+                <h5 class="card-title">Marido Gelado</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Modal de Marido Gelado -->
+          <div class="modal fade" id="maridoGeladoModal" tabindex="-1" aria-labelledby="maridoGeladoModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="maridoGeladoModalLabel">Receita de Marido Gelado</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start" id="maridoGeladoContent">
+                  <h6>Ingredientes:</h6>
+                  <ul>
+                    <li>1 lata de leite condensado</li>
+                    <li>2 latas de leite (use a lata de leite condensado como medida)</li>
+                    <li>2 gemas</li>
+                    <li>2 colheres de sopa de amido de milho</li>
+                    <li>1 pacote de biscoito maisena</li>
+                    <li>1 xícara de leite para molhar os biscoitos</li>
+                    <li>1 lata de creme de leite</li>
+                    <li>100g de chocolate em pó</li>
+                    <li>Chocolate granulado para decorar</li>
+                  </ul>
 
-        <h6>Modo de Preparo:</h6>
-        <ol>
-          <li>Em uma panela, misture o leite condensado, o leite, as gemas e o amido de milho. Cozinhe até formar um creme grosso.</li>
-          <li>Em um refratário, faça uma camada de creme e cubra com biscoitos molhados no leite.</li>
-          <li>Repita as camadas até acabarem os ingredientes.</li>
-          <li>Misture o creme de leite com o chocolate em pó e espalhe por cima.</li>
-          <li>Decore com chocolate granulado e leve à geladeira por pelo menos 4 horas antes de servir.</li>
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Marido Gelado')">Adicionar ao Livro de Receitas</button>
-        <button type="button" class="btn btn-success" onclick="downloadMaridoGelado()">Baixar Receita</button>
-      </div>
-    </div>
-  </div>
-</div>
+                  <h6>Modo de Preparo:</h6>
+                  <ol>
+                    <li>Em uma panela, misture o leite condensado, o leite, as gemas e o amido de milho. Cozinhe até
+                      formar um creme grosso.</li>
+                    <li>Em um refratário, faça uma camada de creme e cubra com biscoitos molhados no leite.</li>
+                    <li>Repita as camadas até acabarem os ingredientes.</li>
+                    <li>Misture o creme de leite com o chocolate em pó e espalhe por cima.</li>
+                    <li>Decore com chocolate granulado e leve à geladeira por pelo menos 4 horas antes de servir.</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Marido Gelado')">Adicionar ao
+                    Livro de Receitas</button>
+                  <button type="button" class="btn btn-success" onclick="downloadMaridoGelado()">Baixar Receita</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<!-- SALADA TROPICAL -->
-<div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 20px; margin-right: 40px;">
-  <div class="card mx-auto" style="width: 18rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#saladaTropicalModal">
-    <img src="img/TOP3 - Salada Tropical.png" class="card-img-top" alt="Salada Tropical">
-    <div class="card-body">
-      <h5 class="card-title">Salada Tropical</h5>
-      <p class="card-text">Clique para ver a receita completa!</p>
-    </div>
-  </div>
-</div>
-<!-- Modal de Salada Tropical-->
-<div class="modal fade" id="saladaTropicalModal" tabindex="-1" aria-labelledby="saladaTropicalModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="saladaTropicalModalLabel">Receita de Salada Tropical</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-start" id="saladaTropicalContent">
-        <h6>Ingredientes:</h6>
-        <ul>
-          <li>1 alface americana picada</li>
-          <li>1 xícara de abacaxi em cubos</li>
-          <li>1 xícara de manga em cubos</li>
-          <li>1 xícara de morangos fatiados</li>
-          <li>100g de queijo branco em cubos</li>
-          <li>Nozes picadas a gosto</li>
-          <li>Molho de iogurte com mel e hortelã</li>
-        </ul>
+          <!-- SALADA TROPICAL -->
+          <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 5px; margin-right: 1px;">
+            <div class="card mx-auto" style="width: 15rem; cursor: pointer;" data-bs-toggle="modal"
+              data-bs-target="#saladaTropicalModal">
+              <img src="img/TOP3 - Salada Tropical.png" class="card-img-top" alt="Salada Tropical">
+              <div class="card-body">
+                <h5 class="card-title">Salada Tropical</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Modal de Salada Tropical-->
+          <div class="modal fade" id="saladaTropicalModal" tabindex="-1" aria-labelledby="saladaTropicalModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="saladaTropicalModalLabel">Receita de Salada Tropical</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start" id="saladaTropicalContent">
+                  <h6>Ingredientes:</h6>
+                  <ul>
+                    <li>1 alface americana picada</li>
+                    <li>1 xícara de abacaxi em cubos</li>
+                    <li>1 xícara de manga em cubos</li>
+                    <li>1 xícara de morangos fatiados</li>
+                    <li>100g de queijo branco em cubos</li>
+                    <li>Nozes picadas a gosto</li>
+                    <li>Molho de iogurte com mel e hortelã</li>
+                  </ul>
 
-        <h6>Modo de Preparo:</h6>
-        <ol>
-          <li>Lave e pique todos os ingredientes.</li>
-          <li>Em uma tigela, misture as frutas, o queijo e as nozes.</li>
-          <li>Adicione a alface e misture delicadamente.</li>
-          <li>Regue com o molho de iogurte e sirva gelada.</li>
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Salada Tropical')">Adicionar ao Livro de Receitas</button>
-        <button type="button" class="btn btn-success" onclick="downloadRecipe('saladaTropicalContent', 'Receita_de_Salada_Tropical.txt')">Baixar Receita</button>
-      </div>
-    </div>
-  </div>
-</div>
+                  <h6>Modo de Preparo:</h6>
+                  <ol>
+                    <li>Lave e pique todos os ingredientes.</li>
+                    <li>Em uma tigela, misture as frutas, o queijo e as nozes.</li>
+                    <li>Adicione a alface e misture delicadamente.</li>
+                    <li>Regue com o molho de iogurte e sirva gelada.</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Salada Tropical')">Adicionar
+                    ao Livro de Receitas</button>
+                  <button type="button" class="btn btn-success"
+                    onclick="downloadRecipe('saladaTropicalContent', 'Receita_de_Salada_Tropical.txt')">Baixar
+                    Receita</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<!-- TORTA DE MORANGO -->
-<div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 20px; margin-right: 40px;">
-  <div class="card mx-auto" style="width: 18rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#tortaMorangoModal">
-    <img src="img/TOP 4 - torta-de-morango-e-bolacha-champagne.webp" class="card-img-top" alt="Torta de Morango">
-    <div class="card-body">
-      <h5 class="card-title">Torta de Morango</h5>
-      <p class="card-text">Clique para ver a receita completa!</p>
-    </div>
-  </div>
-</div>
-<!-- Modal Torta de Morango -->
-<div class="modal fade" id="tortaMorangoModal" tabindex="-1" aria-labelledby="tortaMorangoModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="tortaMorangoModalLabel">Receita de Torta de Morango</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-start" id="tortaMorangoContent">
-        <h6>Ingredientes:</h6>
-        <ul>
-          <li>1 pacote de biscoito champagne</li>
-          <li>500g de morangos frescos</li>
-          <li>1 lata de leite condensado</li>
-          <li>2 xícaras de creme de leite</li>
-          <li>1 pacote de gelatina de morango</li>
-        </ul>
+          <!-- TORTA DE MORANGO -->
+          <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 5px; margin-right: 1px;">
+            <div class="card mx-auto" style="width: 15rem; cursor: pointer;" data-bs-toggle="modal"
+              data-bs-target="#tortaMorangoModal">
+              <img src="img/TOP 4 - torta-de-morango-e-bolacha-champagne.webp" class="card-img-top"
+                alt="Torta de Morango">
+              <div class="card-body">
+                <h5 class="card-title">Torta de Morango</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Torta de Morango -->
+          <div class="modal fade" id="tortaMorangoModal" tabindex="-1" aria-labelledby="tortaMorangoModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="tortaMorangoModalLabel">Receita de Torta de Morango</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start" id="tortaMorangoContent">
+                  <h6>Ingredientes:</h6>
+                  <ul>
+                    <li>1 pacote de biscoito champagne</li>
+                    <li>500g de morangos frescos</li>
+                    <li>1 lata de leite condensado</li>
+                    <li>2 xícaras de creme de leite</li>
+                    <li>1 pacote de gelatina de morango</li>
+                  </ul>
 
-        <h6>Modo de Preparo:</h6>
-        <ol>
-          <li>Dissolva a gelatina de morango conforme as instruções.</li>
-          <li>Misture o leite condensado e o creme de leite até ficar homogêneo.</li>
-          <li>Em uma forma, alterne camadas de biscoito, creme e morangos.</li>
-          <li>Leve à geladeira por 4 horas antes de servir.</li>
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Torta de Morango')">Adicionar ao Livro de Receitas</button>
-        <button type="button" class="btn btn-success" onclick="downloadRecipe('tortaMorangoContent', 'Receita_de_Torta_de_Morango.txt')">Baixar Receita</button>
-      </div>
-    </div>
-  </div>
-</div>
+                  <h6>Modo de Preparo:</h6>
+                  <ol>
+                    <li>Dissolva a gelatina de morango conforme as instruções.</li>
+                    <li>Misture o leite condensado e o creme de leite até ficar homogêneo.</li>
+                    <li>Em uma forma, alterne camadas de biscoito, creme e morangos.</li>
+                    <li>Leve à geladeira por 4 horas antes de servir.</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Torta de Morango')">Adicionar
+                    ao Livro de Receitas</button>
+                  <button type="button" class="btn btn-success"
+                    onclick="downloadRecipe('tortaMorangoContent', 'Receita_de_Torta_de_Morango.txt')">Baixar
+                    Receita</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<!-- BARRIGA DE PORCO -->
-<div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 my-3">
-  <div class="card mx-auto" style="width: 18rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#barrigaPorcoModal">
-    <img src="img/TOP 5 - barrig-de-porco-Assada-com-Batata-.jpg" class="card-img-top" alt="Barriga de Porco">
-    <div class="card-body">
-      <h5 class="card-title">Barriga de Porco</h5>
-      <p class="card-text">Clique para ver a receita completa!</p>
-    </div>
-  </div>
-</div>
-<!-- Modal Barriga de Porco -->
-<div class="modal fade" id="barrigaPorcoModal" tabindex="-1" aria-labelledby="barrigaPorcoModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="barrigaPorcoModalLabel">Receita de Barriga de Porco Assada</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-start" id="barrigaPorcoContent">
-        <h6>Ingredientes:</h6>
-        <ul>
-          <li>1kg de barriga de porco com couro</li>
-          <li>4 batatas grandes cortadas em cubos</li>
-          <li>Sal e pimenta a gosto</li>
-          <li>2 colheres de sopa de azeite</li>
-          <li>Ervas finas a gosto</li>
-          <li>3 dentes de alho picados</li>
-        </ul>
+          <!-- BARRIGA DE PORCO -->
+          <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 my-3">
+            <div class="card mx-auto" style="width: 15rem; cursor: pointer;" data-bs-toggle="modal"
+              data-bs-target="#barrigaPorcoModal">
+              <img src="img/TOP 5 - barrig-de-porco-Assada-com-Batata-.jpg" class="card-img-top" alt="Barriga de Porco">
+              <div class="card-body">
+                <h5 class="card-title">Barriga de Porco</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Barriga de Porco -->
+          <div class="modal fade" id="barrigaPorcoModal" tabindex="-1" aria-labelledby="barrigaPorcoModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="barrigaPorcoModalLabel">Receita de Barriga de Porco Assada</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start" id="barrigaPorcoContent">
+                  <h6>Ingredientes:</h6>
+                  <ul>
+                    <li>1kg de barriga de porco com couro</li>
+                    <li>4 batatas grandes cortadas em cubos</li>
+                    <li>Sal e pimenta a gosto</li>
+                    <li>2 colheres de sopa de azeite</li>
+                    <li>Ervas finas a gosto</li>
+                    <li>3 dentes de alho picados</li>
+                  </ul>
 
-        <h6>Modo de Preparo:</h6>
-        <ol>
-          <li>Tempere a barriga de porco com sal, pimenta, alho e ervas.</li>
-          <li>Deixe marinar por pelo menos 2 horas.</li>
-          <li>Coloque a carne em uma assadeira e asse em forno pré-aquecido a 200°C por 1h30.</li>
-          <li>Adicione as batatas nos últimos 40 minutos de forno.</li>
-          <li>Sirva quente, com a pele bem crocante.</li>
-        </ol>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Barriga de Porco Assada')">Adicionar ao Livro de Receitas</button>
-        <button type="button" class="btn btn-success" onclick="downloadRecipe('barrigaPorcoContent', 'Receita_de_Barriga_de_Porco.txt')">Baixar Receita</button>
-      </div>
-    </div>
-  </div>
-</div>
+                  <h6>Modo de Preparo:</h6>
+                  <ol>
+                    <li>Tempere a barriga de porco com sal, pimenta, alho e ervas.</li>
+                    <li>Deixe marinar por pelo menos 2 horas.</li>
+                    <li>Coloque a carne em uma assadeira e asse em forno pré-aquecido a 200°C por 1h30.</li>
+                    <li>Adicione as batatas nos últimos 40 minutos de forno.</li>
+                    <li>Sirva quente, com a pele bem crocante.</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary"
+                    onclick="addToRecipeBook('Barriga de Porco Assada')">Adicionar ao Livro de Receitas</button>
+                  <button type="button" class="btn btn-success"
+                    onclick="downloadRecipe('barrigaPorcoContent', 'Receita_de_Barriga_de_Porco.txt')">Baixar
+                    Receita</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-</div>
-</div>
+        </div>
+      </div>
 
 </body>
 
@@ -444,17 +489,17 @@
     <div class="texto.index">
       <div class="Título Top">
         <h1>Saiba Mais Sobre Nós!</h1>
-      </div> 
+      </div>
       <p>Conheça nossa história e nossa paixão pelas receitas típicas brasileiras.</p>
       <a href="quemsomos.html" class="btn btn-success w-20">Quem somos</a>
     </div>
-  </section> 
 
-  <!-- Imagem à esquerda -->
-  <div class="quem-somos" style="flex: 1; text-align: left;">
-    <img src="img/quem.somos.index.PNG" alt="Quem Somos" style="max-width: 100%; height: auto;">
-  </div>
+    <!-- Imagem à esquerda -->
+    <div class="quem-somos" style="flex: 1; text-align: left;">
+      <img src="img/quem.somos.index.PNG" alt="Quem Somos" style="max-width: 100%; height: auto;">
+    </div>
 </div>
+</section>
 
 
 
@@ -481,74 +526,74 @@
 </main>
 
 <!--FOOTER-->
- <footer>
-<div class="container-fluid py-4" style="border-top: 2px solid rgb(252, 252, 119);">
-  <div class="row">
-    
-    <!-- Coluna 1 - Lado esquerdo -->
-    <div class="col-lg-4 col-sm-12 text-start mb-3">
-      <img src="img/favicon.ico" class="mb-3" width="150px">
-      <h6><strong>Cozinhar é para todos.</strong></h6>
-      <p class="small">© Cantinho Brasileiro 2024. Todos os direitos reservados.</p>
-    </div>
+<footer>
+  <div class="container-fluid py-4" style="border-top: 2px solid rgb(252, 252, 119);">
+    <div class="row">
 
-    <!-- Coluna 2 - Meio (com newsletter) -->
-    <div class="col-lg-4 col-sm-12 text-center mb-3">
-      <h5 class="mb-3"><strong>Entre em contato!</strong></h5>
-      <p>olaCantinho@gmail.com.br</p>
-
-      <!-- Newsletter -->
-      <div class="newsletter">
-        <h6><strong>Inscreva-se para nossa newsletter</strong></h6>
-        <form action="newsletter.php" method="POST">
-          <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Seu e-mail" name="email" required>
-          </div>
-          <button type="submit" class="btn btn-success">Inscrever-se</button>
-        </form>
+      <!-- Coluna 1 - Lado esquerdo -->
+      <div class="col-lg-4 col-sm-12 text-start mb-3">
+        <img src="img/favicon.ico" class="mb-3" width="150px">
+        <h6><strong>Cozinhar é para todos.</strong></h6>
+        <p class="small">© Cantinho Brasileiro 2024. Todos os direitos reservados.</p>
       </div>
-    </div>
 
-    <!-- Coluna 3 - Redes Sociais -->
-    <div class="col-lg-4 col-sm-12 text-end mb-3">
-      <h5 class="mb-3"><strong>Nos siga nas redes sociais</strong></h5>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/SenaiMG" target="_blank">
-          <img src="img/FOOTER Facebook.png" alt="Facebook" style="width: 40px; height: 40px; margin-right: 10px;">
-        </a>
-        <a href="https://www.instagram.com/senaiminas" target="_blank">
-          <img src="img/FOOTER Instagram.png" alt="Instagram" style="width: 40px; height: 40px; margin-right: 10px;">
-        </a>
-        <a href="https://x.com/senaimg" target="_blank">
-          <img src="img/FOOTER Twitter.png" alt="Twitter" style="width: 40px; height: 40px; margin-right: 10px;">
-        </a>
-        <a href="https://www.youtube.com/c/SenaiMG" target="_blank">
-          <img src="img/FOOTER youtube.png" alt="YouTube" style="width: 40px; height: 40px; margin-right: 10px;">
-        </a>
+      <!-- Coluna 2 - Meio (com newsletter) -->
+      <div class="col-lg-4 col-sm-12 text-center mb-3">
+        <h5 class="mb-3"><strong>Entre em contato!</strong></h5>
+        <p>olaCantinho@gmail.com.br</p>
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+          <h6><strong>Inscreva-se para nossa newsletter</strong></h6>
+          <form action="newsletter.php" method="POST">
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Seu e-mail" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-success">Inscrever-se</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Coluna 3 - Redes Sociais -->
+      <div class="col-lg-4 col-sm-12 text-end mb-3">
+        <h5 class="mb-3"><strong>Nos siga nas redes sociais</strong></h5>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/SenaiMG" target="_blank">
+            <img src="img/FOOTER Facebook.png" alt="Facebook" style="width: 40px; height: 40px; margin-right: 10px;">
+          </a>
+          <a href="https://www.instagram.com/senaiminas" target="_blank">
+            <img src="img/FOOTER Instagram.png" alt="Instagram" style="width: 40px; height: 40px; margin-right: 10px;">
+          </a>
+          <a href="https://x.com/senaimg" target="_blank">
+            <img src="img/FOOTER Twitter.png" alt="Twitter" style="width: 40px; height: 40px; margin-right: 10px;">
+          </a>
+          <a href="https://www.youtube.com/c/SenaiMG" target="_blank">
+            <img src="img/FOOTER youtube.png" alt="YouTube" style="width: 40px; height: 40px; margin-right: 10px;">
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</div>
- </footer>
+</footer>
 
-  <script>
-      // Função para adicionar itens ào livro
-      function adicionarLivro(nome) {
-          let livro = JSON.parse(localStorage.getItem('livro')) || [];
-          const item = { nome, descricao };
-          
-          livro.push(item);
-          localStorage.setItem('livro', JSON.stringify(livro));
-      
-          alert(`${nome} foi adicionado ào seu livro.`);
-      }
-      </script> 
+<script>
+  // Função para adicionar itens ào livro
+  function adicionarLivro(nome) {
+    let livro = JSON.parse(localStorage.getItem('livro')) || [];
+    const item = { nome, descricao };
+
+    livro.push(item);
+    localStorage.setItem('livro', JSON.stringify(livro));
+
+    alert(`${nome} foi adicionado ào seu livro.`);
+  }
+</script>
 
 <!-- Bootstrap JS e CSS -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>
