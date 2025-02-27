@@ -4,21 +4,6 @@
     color: #e4d389; /* Cor para o texto dos links da navbar */
   }
 
-  .navbar-nav .nav-link:hover {
-    color:  #e4d389; /* Cor para o texto ao passar o mouse */
-  }
-
-  .navbar-nav .nav-item.dropdown .nav-link {
-    color:  #e4d389; /* Cor para os itens dropdown */
-  }
-
-  .navbar-nav .nav-item.dropdown .nav-link:hover {
-    color:  #e4d389; /* Cor ao passar o mouse no item dropdown */
-  }
-.dropdown-toggle-no-arrow::after {
-    display: none;
-}
-
 /** Abrir dropdown com hover **/
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -53,14 +38,6 @@
     /* Alinha a linha ao lado esquerdo */
 }
 
-/* Linha fixa abaixo do item ativo */
-.nav-item.active .nav-link.nav-hover::after {
-    width: 100%;
-    /* Largura total da linha */
-    left: 0;
-    /* Alinha a linha ao lado esquerdo */
-}
-
 /* Tooltip do livro de receitas */
 .tooltip-recado {
   position: relative;
@@ -85,13 +62,55 @@
 }
 
 .tooltip-recado:hover::after {
-  opacity: 1;
-  visibility: visible;
+opacity: 1;
+visibility: visible;
 }
 
-
-.tooltip-recado:hover::after {
-  opacity: 1;
+/* ESPAÇAMENTO CARDS */
+.card {
+  width: 18rem;
+  cursor: pointer;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(83, 65, 41, 0.1);
 }
-  
-  
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.modal-content {
+  color: rgb(56, 41, 12);
+  border-radius: 15px;
+}
+
+.row-footer {
+  display: flex;
+  justify-content: space-between; /* Mantém as colunas distribuídas */
+  align-items: center;
+  flex-wrap: nowrap; /* Impede que as colunas quebrem para a linha de baixo */
+  gap: 20px; /* Adiciona um pequeno espaço entre as colunas */
+}
+
+/* Garante que a última coluna fique alinhada corretamente */
+.social-col {
+  flex: 1;
+  text-align: end;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .row-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-col {
+    text-align: center;
+  }
+}
+
+.social-icons a {
+  outline: none;
+  text-decoration: none;}

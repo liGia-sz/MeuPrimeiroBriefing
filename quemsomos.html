@@ -200,56 +200,50 @@
   </main>
 
 
-  <!--FOOTER-->
- <footer>
-  <div class="container-fluid py-4" style="border-top: 2px solid rgb(252, 252, 119);">
-    <div class="row">
-      
-      <!-- Coluna 1 - Lado esquerdo -->
-      <div class="col-lg-4 col-sm-12 text-start mb-3">
-        <img src="img/favicon.ico" class="mb-3" width="150px">
-        <h6><strong>Cozinhar é para todos.</strong></h6>
-        <p class="small">© Cantinho Brasileiro 2024. Todos os direitos reservados.</p>
+  <div class="row row-footer" style="border-top: 2px solid rgb(252, 252, 119);">
+    <!-- Coluna 1 - Lado esquerdo -->
+    <div class="col col-md-4 col-12 text-start mb-3">
+      <img src="img/favicon.ico" class="mb-3" width="150px">
+      <h6><strong>Cozinhar é para todos.</strong></h6>
+      <p class="small">© Cantinho Brasileiro 2024. Todos os direitos reservados.</p>
+    </div>
+  
+    <!-- Coluna 2 - Meio (com newsletter) -->
+    <div class="col col-md-4 col-12 text-center mb-3">
+      <h5 class="mb-3"><strong>Entre em contato!</strong></h5>
+      <p>olaCantinho@gmail.com.br</p>
+  
+      <div class="newsletter">
+        <h6><strong>Inscreva-se para nossa newsletter</strong></h6>
+        <form action="newsletter.php" method="POST">
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Seu e-mail" name="email" required>
+          </div>
+          <button type="submit" class="btn btn-success">Inscrever-se</button>
+        </form>
       </div>
+    </div>
   
-      <!-- Coluna 2 - Meio (com newsletter) -->
-      <div class="col-lg-4 col-sm-12 text-center mb-3">
-        <h5 class="mb-3"><strong>Entre em contato!</strong></h5>
-        <p>olaCantinho@gmail.com.br</p>
-  
-        <!-- Newsletter -->
-        <div class="newsletter">
-          <h6><strong>Inscreva-se para nossa newsletter</strong></h6>
-          <form action="newsletter.php" method="POST">
-            <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Seu e-mail" name="email" required>
-            </div>
-            <button type="submit" class="btn btn-success">Inscrever-se</button>
-          </form>
-        </div>
-      </div>
-  
-      <!-- Coluna 3 - Redes Sociais -->
-      <div class="col-lg-4 col-sm-12 text-end mb-3">
-        <h5 class="mb-3"><strong>Nos siga nas redes sociais</strong></h5>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/SenaiMG" target="_blank">
-            <img src="img/FOOTER Facebook.png" alt="Facebook" style="width: 40px; height: 40px; margin-right: 10px;">
-          </a>
-          <a href="https://www.instagram.com/senaiminas" target="_blank">
-            <img src="img/FOOTER Instagram.png" alt="Instagram" style="width: 40px; height: 40px; margin-right: 10px;">
-          </a>
-          <a href="https://x.com/senaimg" target="_blank">
-            <img src="img/FOOTER Twitter.png" alt="Twitter" style="width: 40px; height: 40px; margin-right: 10px;">
-          </a>
-          <a href="https://www.youtube.com/c/SenaiMG" target="_blank">
-            <img src="img/FOOTER youtube.png" alt="YouTube" style="width: 40px; height: 40px; margin-right: 10px;">
-          </a>
-        </div>
+    <!-- Coluna 3 - Redes Sociais -->
+    <div class="col col-12 text-end mb-3 social-col">
+      <h5 class="mb-3"><strong>Nos siga nas redes sociais</strong></h5>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/SenaiMG" target="_blank">
+          <img src="img/FOOTER Facebook.png" alt="Facebook" style="width: 40px; height: 40px; margin-right: 10px;">
+        </a>
+        <a href="https://www.instagram.com/senaiminas" target="_blank">
+          <img src="img/FOOTER Instagram.png" alt="Instagram" style="width: 40px; height: 40px; margin-right: 10px;">
+        </a>
+        <a href="https://x.com/senaimg" target="_blank">
+          <img src="img/FOOTER Twitter.png" alt="Twitter" style="width: 40px; height: 40px; margin-right: 10px;">
+        </a>
+        <a href="https://www.youtube.com/c/SenaiMG" target="_blank">
+          <img src="img/FOOTER youtube.png" alt="YouTube" style="width: 40px; height: 40px; margin-right: 10px;">
+        </a>
       </div>
     </div>
   </div>
-</footer>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

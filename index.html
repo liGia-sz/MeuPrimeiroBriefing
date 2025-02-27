@@ -29,24 +29,20 @@
     /* Fundo branco Dropdown*/
     .dropdown-menu {
       background-color: #ffffff79 !important;
-    }
+    } 
 
     /* Cor do texto Dropdown*/
     .dropdown-item,
     .dropdown-item:hover {
-      color: #333 !important;
+      color: #774308 !important;
     }
 
     /* FONTE E IMG DE FUNDO  */
     body {
       background-image: url('img/Background.JPG');
-      /* Substitua pelo caminho da sua imagem */
       background-size: cover;
-      /* Ajusta a imagem para cobrir toda a tela */
       background-position: center center;
-      /* Centraliza a imagem */
       background-repeat: no-repeat;
-      /* Evita a repetição da imagem */
       font-family: "Lexend", serif;
       color: rgb(233, 223, 90);
     }
@@ -69,37 +65,10 @@
       }
     }
 
-    /* ESPAÇAMENTO CARDS */
-    .card {
-      width: 18rem;
-      cursor: pointer;
-      border-radius: 15px;
-      overflow: hidden;
-      /* Garante que as bordas arredondadas funcionem corretamente */
-      box-shadow: 0 4px 8px rgba(83, 65, 41, 0.1);
-      /* Adiciona um leve sombreamento */
-    }
-
-    .card img {
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-    }
-
     .row {
-      gap: 40px;
-      /* Espaçamento uniforme entre os cards */
-    }
-
-    .modal-content {
-      color: rgb(56, 41, 12);
-      border-radius: 15px;
-    }
-
-    /*Footer*/
-    .social-icons a {
-      outline: none;
-      text-decoration: none;
-    }
+        gap: 40px;
+        /* Espaçamento uniforme entre os cards */
+      }
   </style>
 </head>
 
@@ -483,21 +452,19 @@
         </div>
       </div>
 
-</body>
-
 <!-- "QUEM SOMOS" -->
-<section class="somos" style="align-items: center;">
-  <div class="container my-2 align-items-center">
+<section class="somos">
+  <div class="container my-2">
     <div class="row d-flex align-items-center">
       <!-- TEXTO: "Saiba Mais Sobre Nós" -->
-      <div class="col-md-6 col-12 text-md-start text-center">
+      <div class="col-md-6 col-12 text-md-start">
         <h1>Saiba Mais Sobre Nós!</h1>
         <p>Conheça nossa história e nossa paixão pelas receitas típicas brasileiras.</p>
         <a href="quemsomos.html" class="btn btn-success">Quem somos</a>
       </div>
 
       <!-- IMAGEM: Quem Somos -->
-      <div class="col align-items-center">
+      <div class="col">
         <img src="img/quem.somos.index.PNG" alt="Quem Somos" class="img-fluid" style="max-width: 100%; height: auto;">
       </div>
     </div>
@@ -527,57 +494,51 @@
 </script>
 </main>
 
-<!--FOOTER-->
-<footer>
-  <div class="container my-4" style="max-width: 1200px; border-top: 2px solid rgb(252, 252, 119); background-color: aquamarine; margin: 0 auto;">
-    <div class="row text-center text-lg-start">
+<div class="row row-footer" style="border-top: 2px solid rgb(252, 252, 119);">
+  <!-- Coluna 1 - Lado esquerdo -->
+  <div class="col col-md-4 col-12 text-start mb-3">
+    <img src="img/favicon.ico" class="mb-3" width="150px">
+    <h6><strong>Cozinhar é para todos.</strong></h6>
+    <p class="small">© Cantinho Brasileiro 2024. Todos os direitos reservados.</p>
+  </div>
 
-      <!-- Coluna 1 - Lado esquerdo -->
-      <div class="col-lg-4 col-md-4 col-12 mb-2">
-        <img src="img/favicon.ico" class="mb-3" width="150px">
-        <h6><strong>Cozinhar é para todos.</strong></h6>
-        <p class="small">© Cantinho Brasileiro 2024. Todos os direitos reservados.</p>
-      </div>
+  <!-- Coluna 2 - Meio (com newsletter) -->
+  <div class="col col-md-4 col-12 text-center mb-3">
+    <h5 class="mb-3"><strong>Entre em contato!</strong></h5>
+    <p>olaCantinho@gmail.com.br</p>
 
-      <!-- Coluna 2 - Meio (com newsletter) -->
-      <div class="col-lg-4 col-md-4 col-12 mb-2">
-        <h5 class="mb-3"><strong>Entre em contato!</strong></h5>
-        <p>olaCantinho@gmail.com.br</p>
-
-        <!-- Newsletter -->
-        <div class="newsletter">
-          <h6><strong>Inscreva-se para nossa newsletter</strong></h6>
-          <form action="newsletter.php" method="POST">
-            <div class="mb-2">
-              <input type="email" class="form-control" placeholder="Seu e-mail" name="email" required>
-            </div>
-            <button type="submit" class="btn btn-success">Inscrever-se</button>
-          </form>
+    <div class="newsletter">
+      <h6><strong>Inscreva-se para nossa newsletter</strong></h6>
+      <form action="newsletter.php" method="POST">
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Seu e-mail" name="email" required>
         </div>
-      </div>
-
-      <!-- Coluna 3 - Redes Sociais -->
-      <div class="col-lg-4 col-md-4 col-12 mb-2">
-        <h5 class="mb-3"><strong>Nos siga nas redes sociais</strong></h5>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/SenaiMG" target="_blank">
-            <img src="img/FOOTER Facebook.png" alt="Facebook" style="width: 40px; height: 40px; margin-right: 10px;">
-          </a>
-          <a href="https://www.instagram.com/senaiminas" target="_blank">
-            <img src="img/FOOTER Instagram.png" alt="Instagram" style="width: 40px; height: 40px; margin-right: 10px;">
-          </a>
-          <a href="https://x.com/senaimg" target="_blank">
-            <img src="img/FOOTER Twitter.png" alt="Twitter" style="width: 40px; height: 40px; margin-right: 10px;">
-          </a>
-          <a href="https://www.youtube.com/c/SenaiMG" target="_blank">
-            <img src="img/FOOTER youtube.png" alt="YouTube" style="width: 40px; height: 40px; margin-right: 10px;">
-          </a>
-        </div>
-      </div>
-
+        <button type="submit" class="btn btn-success">Inscrever-se</button>
+      </form>
     </div>
   </div>
-</footer>
+
+  <!-- Coluna 3 - Redes Sociais -->
+  <div class="col col-12 text-end mb-3 social-col">
+    <h5 class="mb-3"><strong>Nos siga nas redes sociais</strong></h5>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/SenaiMG" target="_blank">
+        <img src="img/FOOTER Facebook.png" alt="Facebook" style="width: 40px; height: 40px; margin-right: 10px;">
+      </a>
+      <a href="https://www.instagram.com/senaiminas" target="_blank">
+        <img src="img/FOOTER Instagram.png" alt="Instagram" style="width: 40px; height: 40px; margin-right: 10px;">
+      </a>
+      <a href="https://x.com/senaimg" target="_blank">
+        <img src="img/FOOTER Twitter.png" alt="Twitter" style="width: 40px; height: 40px; margin-right: 10px;">
+      </a>
+      <a href="https://www.youtube.com/c/SenaiMG" target="_blank">
+        <img src="img/FOOTER youtube.png" alt="YouTube" style="width: 40px; height: 40px; margin-right: 10px;">
+      </a>
+    </div>
+  </div>
+</div>
+
+
 
 <script>
   // Função para adicionar itens ào livro
