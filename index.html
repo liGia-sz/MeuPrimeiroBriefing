@@ -11,7 +11,7 @@
 
   <!-- CSS LOCAL -->
   <link rel="stylesheet" href="./style.css">
-
+ 
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -189,7 +189,7 @@
 
   <!-- FAVORITOS DO SITE-->
   <div class="Título Top" style="text-align: center;">
-    <h1>✳︎ As 5 receitas mais populares do nosso site! ✳︎</h1>
+    <h1>✳︎ As 3 receitas mais populares do nosso site! ✳︎</h1>
     <h3>Clique na Receita e descubra o passo-a-passo!</h3>
   </div>
 
@@ -197,260 +197,223 @@
     <div class="card-group">
       <!-- Container que alinha os cards em uma linha -->
       <div class="container-fluid my-7">
-        <div class="row d-flex justify-content-center flex-wrap">
+        <div class="row d-flex justify-content-center flex-wrap">          
           <!-- FEIJOADA EM CAMADAS -->
           <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 5px; margin-right: 1px;">
-            <div class="card mx-auto" style="width: 15rem; cursor: pointer;" data-bs-toggle="modal"
-              data-bs-target="#feijoadaModal">
-              <img src="img/TOP1 - Feijoada.Camadas.png" class="card-img-top" alt="Feijoada em Camadas">
-              <div class="card-body">
-                <h5 class="card-title">Feijoada Camadas</h5>
-              </div>
+            <div class="card mx-auto" style="width: 15rem;  cursor: pointer;" data-bs-toggle="modal"
+            data-bs-target="#feijoadaModal">
+                <img src="img/TOP1 - Feijoada.Camadas.png" class="Feijoada em Camadas" alt="Nova Receita 1">
+                <div class="card-body">
+                    <h5 class="card-title">Feijoada Camadas</h5>
+                </div>
             </div>
-          </div>
-          <!-- Modal de Feijoada-->
-          <div class="modal fade" id="feijoadaModal" tabindex="-1" aria-labelledby="feijoadaModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="feijoadaModalLabel">Receita de Feijoada em Camadas</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-start" id="recipeContent">
-                  <h6>Ingredientes:</h6>
-                  <ul>
-                    <li>500g de feijão preto</li>
-                    <li>300g de carne-seca dessalgada</li>
-                    <li>200g de linguiça calabresa fatiada</li>
-                    <li>200g de costelinha de porco</li>
-                    <li>1 cebola picada</li>
-                    <li>3 dentes de alho amassados</li>
-                    <li>Sal, pimenta-do-reino e cheiro-verde a gosto</li>
-                    <li>Arroz branco e farofa para acompanhar</li>
-                  </ul>
+       </div> 
 
-                  <h6>Modo de Preparo:</h6>
-                  <ol>
-                    <li>Cozinhe o feijão até ficar macio.</li>
-                    <li>Em uma panela separada, frite a carne-seca, a costelinha e a linguiça.</li>
-                    <li>Refogue a cebola e o alho até dourar, depois misture as carnes e o feijão.</li>
-                    <li>Em um refratário, monte as camadas: arroz, feijoada e farofa, repetindo o processo.</li>
-                    <li>Finalize com cheiro-verde por cima e sirva quente.</li>
-                  </ol>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Feijoada')">Adicionar ao Livro
-                    de Receitas</button>
-                  <button type="button" class="btn btn-success" onclick="downloadRecipe()">Baixar Receita</button>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- MARIDO GELADO -->
-          <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 5px; margin-right: 1px;">
-            <div class="card mx-auto" style="width: 15rem; cursor: pointer;" data-bs-toggle="modal"
+        <!-- MARIDO GELADO -->
+        <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 5px; margin-right: 1px;">
+          <div class="card mx-auto" style="width: 15rem; cursor: pointer;" data-bs-toggle="modal"
               data-bs-target="#maridoGeladoModal">
-              <img src="img/TOP2 - Marido Gelado.png" class="card-img-top" alt="Marido Gelado">
+              <img src="img/TOP2 - Marido Gelado.png" class="card-img-top" alt="Nova Receita 1">
               <div class="card-body">
-                <h5 class="card-title">Marido Gelado</h5>
+                  <h5 class="card-title">Marido Gelado</h5>
               </div>
-            </div>
           </div>
-          <!-- Modal de Marido Gelado -->
-          <div class="modal fade" id="maridoGeladoModal" tabindex="-1" aria-labelledby="maridoGeladoModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="maridoGeladoModalLabel">Receita de Marido Gelado</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-start" id="maridoGeladoContent">
-                  <h6>Ingredientes:</h6>
-                  <ul>
-                    <li>1 lata de leite condensado</li>
-                    <li>2 latas de leite (use a lata de leite condensado como medida)</li>
-                    <li>2 gemas</li>
-                    <li>2 colheres de sopa de amido de milho</li>
-                    <li>1 pacote de biscoito maisena</li>
-                    <li>1 xícara de leite para molhar os biscoitos</li>
-                    <li>1 lata de creme de leite</li>
-                    <li>100g de chocolate em pó</li>
-                    <li>Chocolate granulado para decorar</li>
-                  </ul>
+      </div>
 
-                  <h6>Modo de Preparo:</h6>
-                  <ol>
-                    <li>Em uma panela, misture o leite condensado, o leite, as gemas e o amido de milho. Cozinhe até
-                      formar um creme grosso.</li>
-                    <li>Em um refratário, faça uma camada de creme e cubra com biscoitos molhados no leite.</li>
-                    <li>Repita as camadas até acabarem os ingredientes.</li>
-                    <li>Misture o creme de leite com o chocolate em pó e espalhe por cima.</li>
-                    <li>Decore com chocolate granulado e leve à geladeira por pelo menos 4 horas antes de servir.</li>
-                  </ol>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Marido Gelado')">Adicionar ao
-                    Livro de Receitas</button>
-                  <button type="button" class="btn btn-success" onclick="downloadMaridoGelado()">Baixar Receita</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SALADA TROPICAL -->
-          <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 5px; margin-right: 1px;">
-            <div class="card mx-auto" style="width: 15rem; cursor: pointer;" data-bs-toggle="modal"
-              data-bs-target="#saladaTropicalModal">
-              <img src="img/TOP3 - Salada Tropical.png" class="card-img-top" alt="Salada Tropical">
-              <div class="card-body">
+      <!-- SALADA TROPICAL -->
+      <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 5px; margin-right: 1px;">
+        <div class="card mx-auto" style="width: 15rem; cursor: pointer;" data-bs-toggle="modal"
+            data-bs-target="#saladaTropicalModal">
+            <img src="img/TOP3 - Salada Tropical.png" class="card-img-top" alt="Nova Receita 1">
+            <div class="card-body">
                 <h5 class="card-title">Salada Tropical</h5>
-              </div>
             </div>
-          </div>
-          <!-- Modal de Salada Tropical-->
-          <div class="modal fade" id="saladaTropicalModal" tabindex="-1" aria-labelledby="saladaTropicalModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="saladaTropicalModalLabel">Receita de Salada Tropical</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-start" id="saladaTropicalContent">
-                  <h6>Ingredientes:</h6>
-                  <ul>
-                    <li>1 alface americana picada</li>
-                    <li>1 xícara de abacaxi em cubos</li>
-                    <li>1 xícara de manga em cubos</li>
-                    <li>1 xícara de morangos fatiados</li>
-                    <li>100g de queijo branco em cubos</li>
-                    <li>Nozes picadas a gosto</li>
-                    <li>Molho de iogurte com mel e hortelã</li>
-                  </ul>
+        </div>
+    </div>
 
-                  <h6>Modo de Preparo:</h6>
-                  <ol>
-                    <li>Lave e pique todos os ingredientes.</li>
-                    <li>Em uma tigela, misture as frutas, o queijo e as nozes.</li>
-                    <li>Adicione a alface e misture delicadamente.</li>
-                    <li>Regue com o molho de iogurte e sirva gelada.</li>
-                  </ol>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Salada Tropical')">Adicionar
-                    ao Livro de Receitas</button>
-                  <button type="button" class="btn btn-success"
-                    onclick="downloadRecipe('saladaTropicalContent', 'Receita_de_Salada_Tropical.txt')">Baixar
-                    Receita</button>
-                </div>
-              </div>
+     <!-- Modal de Feijoada-->
+     <div class="modal fade" id="feijoadaModal" tabindex="-1" aria-labelledby="feijoadaModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog modal-lg">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="feijoadaModalLabel">Receita de Feijoada em Camadas</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body text-start" id="recipeContent">                
+             <div class="info-container">        
+               <img src="img/Receitas-relógio.png" alt="Relógio" class="icon" width="20" height="20"> 50 minutos   
+               <img src="img/Receitas-preparo.png" alt="Fácil" class="icon" width="30" height="30"> Fácil
+               <img src="img/Receitas-cifrão.png" alt="Custo" class="icon" width="20" height="20"> Custo Baixo
+               <img src="img/Receitas-user.png" alt="Porções" class="icon" width="20" height="20"> 6 Porções
+             </div>
+           <h6>Ingredientes:</h6>
+           <ul>
+             <li>500g de feijão preto</li>
+             <li>300g de carne-seca dessalgada</li>
+             <li>200g de linguiça calabresa fatiada</li>
+             <li>200g de costelinha de porco</li>
+             <li>1 cebola picada</li>
+             <li>3 dentes de alho amassados</li>
+             <li>Sal, pimenta-do-reino e cheiro-verde a gosto</li>
+             <li>Arroz branco e farofa para acompanhar</li>
+           </ul>
+
+           <h6>Modo de Preparo:</h6>
+           <ol>
+             <li>Cozinhe o feijão até ficar macio.</li>
+             <li>Em uma panela separada, frite a carne-seca, a costelinha e a linguiça.</li>
+             <li>Refogue a cebola e o alho até dourar, depois misture as carnes e o feijão.</li>
+             <li>Em um refratário, monte as camadas: arroz, feijoada e farofa, repetindo o processo.</li>
+             <li>Finalize com cheiro-verde por cima e sirva quente.</li>
+           </ol>
+         </div>
+         <div class="modal-footer">
+          <!-- Botões --> 
+          <button class="action-btn" onclick="addToRecipeBook('Feijoada')">Favoritar</button>
+          <button class="action-btn" onclick="downloadRecipe()">Download</button>                
+          <button class="action-btn">Imprimir</button>
+           </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+        <!-- Modal de Marido Gelado -->
+        <div class="modal fade" id="maridoGeladoModal" tabindex="-1" aria-labelledby="maridoGeladoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="maridoGeladoModalLabel">Receita de Marido Gelado</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body text-start" id="maridoGeladoContent">
+              <div class="info-container">        
+                <img src="img/Receitas-relógio.png" alt="Relógio" class="icon" width="20" height="20"> 50 minutos   
+                <img src="img/Receitas-preparo.png" alt="Fácil" class="icon" width="30" height="30"> Fácil
+                <img src="img/Receitas-cifrão.png" alt="Custo" class="icon" width="20" height="20"> Custo Baixo
+                <img src="img/Receitas-user.png" alt="Porções" class="icon" width="20" height="20"> 6 Porções
           </div>
+              <h6>Ingredientes:</h6>
+              <ul>
+                <li>1 lata de leite condensado</li>
+                <li>2 latas de leite (use a lata de leite condensado como medida)</li>
+                <li>2 gemas</li>
+                <li>2 colheres de sopa de amido de milho</li>
+                <li>1 pacote de biscoito maisena</li>
+                <li>1 xícara de leite para molhar os biscoitos</li>
+                <li>1 lata de creme de leite</li>
+                <li>100g de chocolate em pó</li>
+                <li>Chocolate granulado para decorar</li>
+              </ul>
 
-          <!-- TORTA DE MORANGO -->
-          <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 my-3" style="margin-bottom: 5px; margin-right: 1px;">
-            <div class="card mx-auto" style="width: 15rem; cursor: pointer;" data-bs-toggle="modal"
-              data-bs-target="#tortaMorangoModal">
-              <img src="img/TOP 4 - torta-de-morango-e-bolacha-champagne.webp" class="card-img-top"
-                alt="Torta de Morango">
-              <div class="card-body">
-                <h5 class="card-title">Torta de Morango</h5>
-              </div>
+              <h6>Modo de Preparo:</h6>
+              <ol>
+                <li>Em uma panela, misture o leite condensado, o leite, as gemas e o amido de milho. Cozinhe até
+                  formar um creme grosso.</li>
+                <li>Em um refratário, faça uma camada de creme e cubra com biscoitos molhados no leite.</li>
+                <li>Repita as camadas até acabarem os ingredientes.</li>
+                <li>Misture o creme de leite com o chocolate em pó e espalhe por cima.</li>
+                <li>Decore com chocolate granulado e leve à geladeira por pelo menos 4 horas antes de servir.</li>
+              </ol>
             </div>
+            <div class="modal-footer">                
+            <!-- Botões --> 
+             <button class="action-btn" onclick="addToRecipeBook('Feijoada')">Favoritar</button>
+             <button class="action-btn" onclick="downloadRecipe()">Download</button>                
+             <button class="action-btn">Imprimir</button>
           </div>
-          <!-- Modal Torta de Morango -->
-          <div class="modal fade" id="tortaMorangoModal" tabindex="-1" aria-labelledby="tortaMorangoModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="tortaMorangoModalLabel">Receita de Torta de Morango</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-start" id="tortaMorangoContent">
-                  <h6>Ingredientes:</h6>
-                  <ul>
-                    <li>1 pacote de biscoito champagne</li>
-                    <li>500g de morangos frescos</li>
-                    <li>1 lata de leite condensado</li>
-                    <li>2 xícaras de creme de leite</li>
-                    <li>1 pacote de gelatina de morango</li>
-                  </ul>
-
-                  <h6>Modo de Preparo:</h6>
-                  <ol>
-                    <li>Dissolva a gelatina de morango conforme as instruções.</li>
-                    <li>Misture o leite condensado e o creme de leite até ficar homogêneo.</li>
-                    <li>Em uma forma, alterne camadas de biscoito, creme e morangos.</li>
-                    <li>Leve à geladeira por 4 horas antes de servir.</li>
-                  </ol>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Torta de Morango')">Adicionar
-                    ao Livro de Receitas</button>
-                  <button type="button" class="btn btn-success"
-                    onclick="downloadRecipe('tortaMorangoContent', 'Receita_de_Torta_de_Morango.txt')">Baixar
-                    Receita</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- BARRIGA DE PORCO -->
-          <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 my-3">
-            <div class="card mx-auto" style="width: 15rem; cursor: pointer;" data-bs-toggle="modal"
-              data-bs-target="#barrigaPorcoModal">
-              <img src="img/TOP 5 - barrig-de-porco-Assada-com-Batata-.jpg" class="card-img-top" alt="Barriga de Porco">
-              <div class="card-body">
-                <h5 class="card-title">Barriga de Porco</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Modal Barriga de Porco -->
-          <div class="modal fade" id="barrigaPorcoModal" tabindex="-1" aria-labelledby="barrigaPorcoModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="barrigaPorcoModalLabel">Receita de Barriga de Porco Assada</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-start" id="barrigaPorcoContent">
-                  <h6>Ingredientes:</h6>
-                  <ul>
-                    <li>1kg de barriga de porco com couro</li>
-                    <li>4 batatas grandes cortadas em cubos</li>
-                    <li>Sal e pimenta a gosto</li>
-                    <li>2 colheres de sopa de azeite</li>
-                    <li>Ervas finas a gosto</li>
-                    <li>3 dentes de alho picados</li>
-                  </ul>
-
-                  <h6>Modo de Preparo:</h6>
-                  <ol>
-                    <li>Tempere a barriga de porco com sal, pimenta, alho e ervas.</li>
-                    <li>Deixe marinar por pelo menos 2 horas.</li>
-                    <li>Coloque a carne em uma assadeira e asse em forno pré-aquecido a 200°C por 1h30.</li>
-                    <li>Adicione as batatas nos últimos 40 minutos de forno.</li>
-                    <li>Sirva quente, com a pele bem crocante.</li>
-                  </ol>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary"
-                    onclick="addToRecipeBook('Barriga de Porco Assada')">Adicionar ao Livro de Receitas</button>
-                  <button type="button" class="btn btn-success"
-                    onclick="downloadRecipe('barrigaPorcoContent', 'Receita_de_Barriga_de_Porco.txt')">Baixar
-                    Receita</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
+
+       <!-- Modal de Salada Tropical-->
+       <div class="modal fade" id="saladaTropicalModal" tabindex="-1" aria-labelledby="saladaTropicalModalLabel"
+       aria-hidden="true">
+       <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="saladaTropicalModalLabel">Receita de Salada Tropical</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body text-start" id="saladaTropicalContent">
+             <div class="info-container">        
+               <img src="img/Receitas-relógio.png" alt="Relógio" class="icon" width="20" height="20"> 50 minutos   
+               <img src="img/Receitas-preparo.png" alt="Fácil" class="icon" width="30" height="30"> Fácil
+               <img src="img/Receitas-cifrão.png" alt="Custo" class="icon" width="20" height="20"> Custo Baixo
+               <img src="img/Receitas-user.png" alt="Porções" class="icon" width="20" height="20"> 6 Porções
+         </div>
+             <h6>Ingredientes:</h6>
+             <ul>
+               <li>1 alface americana picada</li>
+               <li>1 xícara de abacaxi em cubos</li>
+               <li>1 xícara de manga em cubos</li>
+               <li>1 xícara de morangos fatiados</li>
+               <li>100g de queijo branco em cubos</li>
+               <li>Nozes picadas a gosto</li>
+               <li>Molho de iogurte com mel e hortelã</li>
+             </ul>
+
+             <h6>Modo de Preparo:</h6>
+             <ol>
+               <li>Lave e pique todos os ingredientes.</li>
+               <li>Em uma tigela, misture as frutas, o queijo e as nozes.</li>
+               <li>Adicione a alface e misture delicadamente.</li>
+               <li>Regue com o molho de iogurte e sirva gelada.</li>
+             </ol>
+           </div>
+           <div class="modal-footer">
+             <!-- Botões --> 
+            <button class="action-btn" onclick="addToRecipeBook('Feijoada')">Favoritar</button>
+            <button class="action-btn" onclick="downloadRecipe()">Download</button>                
+            <button class="action-btn">Imprimir</button>
+              </div>
+           </div>
+         </div>
+        </div>
+      </div>
+
+       <!-- Modal de Salada Tropical-->
+       <div class="modal fade" id="saladaTropicalModal" tabindex="-1" aria-labelledby="saladaTropicalModalLabel"
+       aria-hidden="true">
+       <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="saladaTropicalModalLabel">Receita de Salada Tropical</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body text-start" id="saladaTropicalContent">
+             <h6>Ingredientes:</h6>
+             <ul>
+               <li>1 alface americana picada</li>
+               <li>1 xícara de abacaxi em cubos</li>
+               <li>1 xícara de manga em cubos</li>
+               <li>1 xícara de morangos fatiados</li>
+               <li>100g de queijo branco em cubos</li>
+               <li>Nozes picadas a gosto</li>
+               <li>Molho de iogurte com mel e hortelã</li>
+             </ul>
+
+             <h6>Modo de Preparo:</h6>
+             <ol>
+               <li>Lave e pique todos os ingredientes.</li>
+               <li>Em uma tigela, misture as frutas, o queijo e as nozes.</li>
+               <li>Adicione a alface e misture delicadamente.</li>
+               <li>Regue com o molho de iogurte e sirva gelada.</li>
+             </ol>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-primary" onclick="addToRecipeBook('Salada Tropical')">Adicionar
+               ao Livro de Receitas</button>
+             <button type="button" class="btn btn-success"
+               onclick="downloadRecipe('saladaTropicalContent', 'Receita_de_Salada_Tropical.txt')">Baixar
+               Receita</button>
+              </div>
+            </div>
+          </div>
+         </div>
+       </div>
 
 <!-- "QUEM SOMOS" -->
 <section class="somos">
