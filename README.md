@@ -55,7 +55,7 @@ Criação e interpretação de Briefing para um Projeto Web
 
 - É necessário obter dados dos visitantes? O que é preciso saber? Por quê? **R: Não, pois o site quer apenas transpassar informações.**
 
-### Público-alvo
+### 🥗 Público-alvo
 
 - Foi apontado na última reunião que o público-alvo é pessoas interessadas na culinária Brasileira. Para completar, qual é o publico-alvo secundario e terciário? Descreva interesses, necessidades e oque mais souber a respeito.
 
