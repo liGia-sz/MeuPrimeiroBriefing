@@ -1,12 +1,13 @@
 # 🥘 Meu Primeiro Briefing 
 Criação e interpretação de Briefing para um Projeto Web
-
-## 🍲 Briefing Preliminar
-- Projeto escolhido pelo cliente: **Site de receita de comidas brasileiras**
-- Nome da empresa: **Cantinho BRasileiro**
 ![gif-cantinho](https://github.com/user-attachments/assets/9f18dc42-b70a-4ece-a618-b0bc5b77d715)
 
 
+## 🍲 Briefing Preliminar
+- Projeto escolhido pelo cliente: **Site de receita de comidas brasileiras**
+  
+- Nome da empresa: **Cantinho BRasileiro**
+  
 - Publico alvo: **Pessoas interessadas na culinária Brasileira.**
 
 - Objetivo do Web Site: **Mostrar receiras que são apenas Brasleiras ensinando passo a passo com opções de mudar idioma.**
@@ -23,8 +24,8 @@ Criação e interpretação de Briefing para um Projeto Web
         
         - Sadia
 
-### 🥗 Referências: **https://www.tudogostoso.com.br/**
-### 🥗 Observações: *"Desejo uma interface que seja chamativa, porém confortavel que passe confiança nas receitas demonstradas."*
+### Referências: **https://www.tudogostoso.com.br/**
+### Observações: *"Desejo uma interface que seja chamativa, porém confortavel que passe confiança nas receitas demonstradas."*
 
 ## 🍲 Briefing Detalhado
 
