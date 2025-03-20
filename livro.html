@@ -160,19 +160,27 @@
 </div>
 
 
+<!-- Lista de receitas salvas -->
+<ul id="itensLivro" class="list-group"></ul>
+
+<!-- Lista de receitas favoritas -->
+<ul id="itensLivro" class="list-group"></ul>
+
 <script>
 // Função para carregar itens do livro
 function carregarLivro() {
-    const livro = JSON.parse(localStorage.getItem('livro')) || [];
+    const livro = JSON.parse(localStorage.getItem('livro')) || []; // Busca os favoritos
     const livroLista = document.getElementById('itensLivro');
-    
-    livroLista.innerHTML = ''; // Limpa a lista antes de adicionar novos itens
+
+    if (!livroLista) return; // Evita erro se o elemento não existir
+
+    livroLista.innerHTML = ''; // Limpa a lista antes de adicionar os itens
 
     livro.forEach((item, index) => {
         const li = document.createElement('li');
         li.classList.add('list-group-item');
         li.innerHTML = `
-            <strong>${item.nome}</strong> - ${item}
+            <strong>${item.nome}</strong>
             <button class="btn btn-danger btn-sm float-end" onclick="removerItem(${index})">Remover</button>
         `;
         livroLista.appendChild(li);
@@ -182,14 +190,15 @@ function carregarLivro() {
 // Função para remover item do livro
 function removerItem(index) {
     let livro = JSON.parse(localStorage.getItem('livro')) || [];
-    livro.splice(index, 1); // Remove o item pelo índice
-    localStorage.setItem('livro', JSON.stringify(livro));
-    carregarLivro(); // Recarrega o livro para mostrar os itens restantes
+    livro.splice(index, 1); // Remove a receita pelo índice
+    localStorage.setItem('livro', JSON.stringify(livro)); // Atualiza o localStorage
+    carregarLivro(); // Recarrega a lista atualizada
 }
 
-// Carregar o livro ao carregar a página
+// Carregar a lista ao abrir a página
 window.onload = carregarLivro;
 </script>
+
 
 <!--FOOTER-->
 <footer>

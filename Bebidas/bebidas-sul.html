@@ -214,9 +214,9 @@
 
     <!-- Botões -->
     <div class="recipe-actions">
-      <button class="action-btn">
-          <i class="fa fa-heart"></i> Favoritar
-      </button>
+        <button class="action-btn" onclick="adicionarLivro('Chimarrão')">
+            <i class="fa fa-heart"></i> Favoritar
+        </button>
       <button class="action-btn">
           <i class="fa fa-share-alt"></i> Compartilhar
       </button>
@@ -274,9 +274,9 @@
     <ul>4- Sirva-se e aproveite essa bebida reconfortante, ideal para qualquer momento do dia!</ul>
 
     <div class="recipe-actions">
-      <button class="action-btn">
-          <i class="fa fa-heart"></i> Favoritar
-      </button>
+      <button class="action-btn" onclick="adicionarLivro('Café com Leite')">
+        <i class="fa fa-heart"></i> Favoritar
+    </button>
       <button class="action-btn">
           <i class="fa fa-share-alt"></i> Compartilhar
       </button>
@@ -291,27 +291,16 @@
 
   </div>
 
-</main>
-<!-- Script de Download e Adição ao Livro -->
-<script>
-  function downloadRecipe(contentId, filename) {
-    const content = document.getElementById(contentId).innerText;
-    const blob = new Blob([content], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = filename;
-    a.click();
-
-    URL.revokeObjectURL(url);
-  }
-
-  function addToRecipeBook(recipeName) {
-    alert(`A receita "${recipeName}" foi adicionada ao seu Livro de Receitas!`);
-    // Aqui você pode adicionar a lógica para armazenar a receita no livro, como localStorage ou uma chamada de API.
-  }
-</script>
+  <script>
+    // Função para adicionar itens ao livro
+    function adicionarLivro(nome) {
+        let livro = JSON.parse(localStorage.getItem('livro')) || []; // Busca o livro salvo ou cria um novo array
+        livro.push({ nome }); // Adiciona a receita
+    
+        localStorage.setItem('livro', JSON.stringify(livro)); // Salva no localStorage
+        alert(`${nome} foi adicionado ao seu livro.`);
+    }
+    </script>
 </main>
 
 <div class="row row-footer" style="border-top: 2px solid rgb(252, 252, 119);">
