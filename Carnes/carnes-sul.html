@@ -1,216 +1,400 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cantinho BRasileiro - carnes do Sul</title>
+  <title>Carnes Sulistas | Cantinho BRasileiro</title>
+
+  <!-- LINK BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- CSS LOCAL -->
   <link rel="stylesheet" href="../style.css">
 
-  <!-- Link para Font Awesome (CDN) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMWx/w17N1yFCO7xzBf6VobH6lcxXoY8s+g8V4R" crossorigin="anonymous">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-  <!--Bootstrap Icons-->
-  <link rel="icon" href="..img/favicon.ico" type="image/x-icon">
+  <!--BOOTSTRAP ICONS-->
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+  <style>
+    /* Cor barra de menu */
+    .navbar {
+      background-color: #f7d9743b !important;
+    }
+
+    /* Fundo branco Dropdown*/
+    .dropdown-menu {
+      background-color: #ffffff79 !important;
+    } 
+
+    /* Cor do texto Dropdown*/
+    .dropdown-item,
+    .dropdown-item:hover {
+      color: #774308 !important;
+    }
+
+    /* FONTE E IMG DE FUNDO  */
+    body {
+      background-image: url('../img/Background.JPG');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      font-family: "Lexend", serif;
+      color: rgb(233, 223, 90);
+    }
+
+    .sul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px; /* Espaço total */
+    margin: 60px auto;
+    gap: 70px;
+}
+
+.image-left {
+    width: 45%; /* Deixa a imagem maior */
+    max-width: 550px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-box {
+    width: 50%;
+    text-align: left;
+}
+
+  </style>
 </head>
 
 <body>
-
-  <header>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg border-bottom border-warning">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<header>
+  <nav class="navbar navbar-expand-lg border-bottom border-warning">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <li class="nav-item">
-              <div class="container">
-                <a class="nav-link nav-hover h6 text-dark" href="quemsomos.html">Quem somos</a>
-              </div>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="doces.html">Doces</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="../Doces/doces-sul.html">Sul</a></li>
-                <li><a class="dropdown-item" href="../Doces/doces-sudeste.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="../Doces/doces-centro-oeste.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="../Doces/doces-Nordeste.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="../Doces/doces-Norte.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Salgados</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="../Salgados/salgados-sul.html">Sul</a></li>
-                <li><a class="dropdown-item" href="../Salgados/salgados-sudeste.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="../Salgados/salgados-centro-oeste.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="../Salgados/salgados-nordeste.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="../Salgados/salgados-norte.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item mx-auto">
-              <a class="navbar-brand" href="../index.html">
-                <a class="navbar-brand mx-4" href="../index.html"> <!--Logo navbar-->
-                  <img src="../img/logo.png" alt="Cantinho" width="95" height="95">
-                </a>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Bebidas</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="../Bebidas/bebidas-sul.html">Sul</a></li>
-                <li><a class="dropdown-item" href="../Bebidas/bebidas-sudeste.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="../Bebidas/bebidas-centro-oeste.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="../Bebidas/bebidas-nordeste.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="../Bebidas/bebidas-norte.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Carnes</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="../Carnes/carnes-sul.html">Sul</a></li>
-                <li><a class="dropdown-item" href="../Carnes/carnes-sudeste.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="../Carnes/carnes-centro-oeste.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="../Carnes/carnes-nordeste.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="../Carnes/carnes-norte.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Saladas e molhos</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="../Sal-Mol/s.m-sul.html">Sul</a></li>
-                <li><a class="dropdown-item" href="../Sal-Mol/s.m-sudeste.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="../Sal-Mol/s.m-centro-oeste.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="../Sal-Mol/s.m-nordeste.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="../Sal-Mol/s.m-norte.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-          </ul>
-
-          <!-- Logo como um botão simples (BUGADO) -->
-          <li class="nav-item ms-3">
-            <a class="nav-link p-0" href="../quemsomos.html">
-              <img src="../img/receitas.fav.png" alt="Livro de Receitas" width="50" height="50" class="d-block">
-            </a>
+          <li class="nav-item">
+            <div class="container">
+              <a class="nav-link nav-hover h6" href="../index.html"><strong>Início</strong></a>
+            </div>
           </li>
 
-        </div>
-    </nav>
-  </header>
-  </br>
-  <div class="container text-center">
-    <h3 class="receita">Churrasco Gaúcho</h3>
-    </br>
-    <img src="../img/churrasco-gaucho.jpg" alt="..." width="1000" height="700">
-    </br>
-    </br>
+          <li class="nav-item">
+            <div class="container">
+              <a class="nav-link nav-hover h6" href="../quemsomos.html"><strong>Quem Somos</strong></a>
+            </div>
+          </li>
 
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#"><strong>Doces</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="../Doces/doces-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="../Doces/doces-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="../Doces/doces-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="../Doces/doces-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="../Doces/doces-norte.html">Norte</a></li>
+            </ul>
+          </li>
 
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Salgados</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="../Salgados/salgados-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="../Salgados/salgados-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="../Salgados/salgados-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="../Salgados/salgados-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="../Salgados/salgados-norte.html">Norte</a></li>
+            </ul>
+          </li>
 
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Bebidas</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="../Bebidas/bebidas-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="../Bebidas/bebidas-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="../Bebidas/bebidas-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="../Bebidas/bebidas-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="../Bebidas/bebidas-norte.html">Norte</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Carnes</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="../Carnes/carnes-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="../Carnes/carnes-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="../Carnes/carnes-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="../Carnes/carnes-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="../Carnes/carnes-norte.html">Norte</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Saladas e molhos</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="../Sal-Mol/s.m-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="../Sal-Mol/s.m-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="../Sal-Mol/s.m-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="../Sal-Mol/s.m-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="../Sal-Mol/s.m-norte.html">Norte</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="navbar-brand mx-4 tooltip-recado" href="../livro.html" data-recado="Suas receitas favoritas!">
+          <!--Logo livro de receitas-->
+          <img src="../img/receitas.fav.png" alt="Cantinho" width="50" height="50">
+        </a>
+        </li>
+      </div>
+  </nav>
+</header>
+
+<div class="sul">
+  <img src="../img/INICIO-SUL.png" alt="Doces do Sul" class="image-left">
+  <div class="text-box">
+      <h1>Carnes do Sul</h1>
+      <h3>O Sul do Brasil tem carnes tradicionais que carregam influências europeias e sabores marcantes. Entre os mais conhecidos, o Barreado e o Entrevero conquistam pelo sabor e textura irresistíveis, sendo presença certa nas mesas da região.</h3>
   </div>
-  <div class="container">
-    <p></p>
-    <h4>Ingredientes:</h4>
-    <p>1 peça de costela de boi (aproximadamente 1,5 kg)</p>
-    <p>Sal grosso a gosto</p>
-    <p>1 ramo de alecrim</p>
-    <p>Azeite de oliva</p>
+</div>
 
-    <h4>Modo de Preparo:</h4>
-    <p></p>
-
-    <p>Tempere a costela com sal grosso e coloque um ramo de alecrim sobre a carne.</p>
-    <p> Asse a costela lentamente na churrasqueira por cerca de 3 a 4 horas, virando de vez em quando para dourar.</p>
-    <p> Sirva com arroz, farofa e vinagrete.</p>
-
-    </br>
-    </br>
-    </br>
-    </br>
-
-  </div>
-
-  <div class="container text-center">
-    <h3 class="receita">Pork Belly (Barriga de Porco Assada)</h3>
-    <img src="../img/barrig-de-porco-Assada-com-Batata-.jpg" alt="..." width="1000" height="700">
-    </br>
-    </br>
-
-  </div>
-  <div class="container">
-    <p></p>
-    <h4>Ingredientes: </h4>
-
-    <p>1 kg de barriga de porco</p>
-    <p>4 dentes de alho picados</p>
-    <p>1 colher de sopa de azeite de oliva</p>
-    <p>1 ramo de alecrim</p>
-    <p>Sal e pimenta-do-reino a gosto</p>
-
-    </br>
-
-    <h4>Modo de Preparo:</h4>
-    <p></p>
-
-    <p>Tempere a barriga de porco com alho, azeite, sal e pimenta. </p>
-    <p>Deixe marinar por pelo menos 1 hora.</p>
-    <p>Coloque a barriga de porco em uma assadeira, regue com azeite e asse em forno preaquecido a 180°C por cerca de
-      2
-      horas.</p>
-    <p>Sirva com arroz, salada de batata e farofa.</p>
-
-
-  </div>
-
-  </main>
-  <footer>
-    <div class="container text-center">
-      <p>© Cantinho BRasileiro 2024</p>
+<!--BARREADO-->
+<div class="recipe-container">
+  <div class="recipe-content">
+    <h1>Barreado</h1> 
+    <div class="info-container">
+      <span class="info-item">
+          <img src="../img/Receitas-relógio.png" alt="Relógio" class="icon" width="20" height="20"> 3 horas
+      </span>
+      <span class="info-item">
+          <img src="../img/Receitas-preparo.png" alt="Fácil" class="icon" width="30" height="30"> Médio
+      </span>
+      <span class="info-item">
+          <img src="../img/Receitas-cifrão.png" alt="Custo" class="icon" width="20" height="20"> Custo Médio
+      </span>
+      <span class="info-item">
+          <img src="../img/Receitas-user.png" alt="Porções" class="icon" width="20" height="20"> 6 Porções
+      </span>
     </div>
-  </footer>
+
+    <div class="text-image-container">
+        <img src="../img/Autora-sul-1.png" alt="Fulana de Tal" class="author-image">
+        <p><strong>Por Fulana de Tal</strong> - O Barreado é um prato típico do Paraná, preparado com carne bovina cozida lentamente, que resulta em uma carne macia e saborosa. Servido com arroz branco e cheiro-verde, é um prato perfeito para refeições especiais.</p>
+    </div>
+
+    <h4>Ingredientes</h4>
+    <ul>
+        <li>1 kg de carne bovina magra (coxão mole, patinho, alcatra, etc.)</li>
+        <li>2 cebolas picadas</li>
+        <li>3 dentes de alho picados</li>
+        <li>2 tomates picados</li>
+        <li>1 pimentão picado</li>
+        <li>1 xícara de chá de farinha de mandioca</li>
+        <li>2 colheres de sopa de óleo</li>
+        <li>Sal e cheiro-verde picado a gosto</li>
+        <li>Água (quanto baste)</li>
+    </ul>
+
+    <h4>Utensílios</h4>
+    <ul>
+        <li>1 Panela de pressão</li>
+        <li>1 Colher de pau</li>
+    </ul>
+
+    <h4>Modo de Preparo:</h4>
+    <ul>1- Corte a carne em pedaços e tempere com sal.</ul>
+    <ul>2- Em uma panela de pressão, aqueça o óleo em fogo médio e refogue a cebola, o alho, o tomate e o pimentão.</ul>
+    <ul>3- Acrescente a carne e cubra com água.</ul>
+    <ul>4- Tampe a panela e cozinhe por cerca de 3 horas em fogo baixo.</ul>
+    <ul>5- Depois de cozida, retire a carne da panela, desfie e volte para o caldo.</ul>
+    <ul>6- Acrescente a farinha de mandioca e mexa bem até engrossar.</ul>
+    <ul>7- Sirva quente com arroz branco e cheiro-verde.</ul>
+
+    <div class="recipe-actions">
+      <button class="action-btn">
+          <i class="fa fa-heart"></i> Favoritar
+      </button>
+      <button class="action-btn">
+          <i class="fa fa-share-alt"></i> Compartilhar
+      </button>
+      <button class="action-btn">
+          <i class="fa fa-print"></i> Imprimir
+      </button>
+    </div>
+  </div>
+
+  <img src="../img/Sul-Barreado.png" alt="Barreado" class="recipe-image" style="height: 400px">
+</div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+
+<!--ENTREVERO-->
+<div class="recipe-container">
+  <div class="recipe-content">
+    <h1>Entrevero</h1> 
+    <div class="info-container">
+      <span class="info-item">
+          <img src="../img/Receitas-relógio.png" alt="Relógio" class="icon" width="20" height="20"> 40 minutos
+      </span>
+      <span class="info-item">
+          <img src="../img/Receitas-preparo.png" alt="Fácil" class="icon" width="30" height="30"> Médio
+      </span>
+      <span class="info-item">
+          <img src="../img/Receitas-cifrão.png" alt="Custo" class="icon" width="20" height="20"> Custo Médio
+      </span>
+      <span class="info-item">
+          <img src="../img/Receitas-user.png" alt="Porções" class="icon" width="20" height="20"> 8 Porções
+      </span>
+    </div>
+
+    <div class="text-image-container">
+        <img src="../img/Autora-sul-2.png" alt="Fulana de Tal" class="author-image">
+        <p><strong>Por Fulana de Tal</strong> - O Entrevero é um prato típico do Sul do Brasil, especialmente amado no Rio Grande do Sul. Com uma mistura de carnes e mandioca, esse prato é perfeito para servir em grandes almoços ou jantares. Uma verdadeira explosão de sabores!</p>
+    </div>
+
+    <h4>Ingredientes</h4>
+    <ul>
+        <li>200 g de bacon cortado em cubinhos</li>
+        <li>200 g de linguiça calabresa cortada em rodelas</li>
+        <li>200 g de carne de gado cortada em cubos (alcatra ou patinho)</li>
+        <li>200 g de peito de frango cortado em cubos</li>
+        <li>200 g de coração de frango cortado ao meio</li>
+        <li>200 g de carne de porco cortada em cubos</li>
+        <li>2 cenouras cortadas em rodelas</li>
+        <li>1 pimentão verde cortado em rodelas</li>
+        <li>500 g de tomate maduro sem pele e sem semente</li>
+        <li>1 cebola grande cortada em cubos</li>
+        <li>1 kg de mandioca (aipim) descascado, cortado em cubos e cozido (não muito mole)</li>
+        <li>6 colheres de sopa de molho shoyu</li>
+        <li>Sal a gosto</li>
+    </ul>
+
+    <h4>Utensílios</h4>
+    <ul>
+        <li>1 Frigideira grande</li>
+        <li>1 Panela</li>
+    </ul>
+
+    <h4>Modo de Preparo:</h4>
+    <ul>1- Em uma frigideira grande, frite o bacon até soltar a gordura e reserve.</ul>
+    <ul>2- Na mesma frigideira, frite a linguiça e reserve.</ul>
+    <ul>3- Refogue a cenoura com a carne de gado e a de porco até dourar, depois reserve.</ul>
+    <ul>4- Na frigideira, frite o peito de frango e acrescente o tomate, fazendo um molho. Depois, refogue o pimentão e a cebola com o molho de frango.</ul>
+    <ul>5- Misture todos os ingredientes fritos e reservados, acrescente a mandioca e o molho shoyu. Tempere com sal a gosto.</ul>
+    <ul>6- Deixe em fogo baixo por 3 minutos para incorporar os sabores.</ul>
+    <ul>7- Sirva quente, acompanhado de arroz branco e/ou pão.</ul>
+
+    <div class="recipe-actions">
+      <button class="action-btn">
+          <i class="fa fa-heart"></i> Favoritar
+      </button>
+      <button class="action-btn">
+          <i class="fa fa-share-alt"></i> Compartilhar
+      </button>
+      <button class="action-btn">
+          <i class="fa fa-print"></i> Imprimir
+      </button>
+    </div>
+  </div>
+
+  <img src="../img/Sul-Entrevero.png" alt="Entrevero" class="recipe-image" style="height: 400px">
+</div>
+
+</main>
+<!-- Script de Download e Adição ao Livro -->
+<script>
+  function downloadRecipe(contentId, filename) {
+    const content = document.getElementById(contentId).innerText;
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    a.click();
+
+    URL.revokeObjectURL(url);
+  }
+
+  function addToRecipeBook(recipeName) {
+    alert(`A receita "${recipeName}" foi adicionada ao seu Livro de Receitas!`);
+    // Aqui você pode adicionar a lógica para armazenar a receita no livro, como localStorage ou uma chamada de API.
+  }
+</script>
+</main>
+
+<div class="row row-footer" style="border-top: 2px solid rgb(252, 252, 119);">
+  <!-- Coluna 1 - Lado esquerdo -->
+  <div class="col col-md-4 col-12 text-start mb-3">
+    <img src="../img/favicon.ico" class="mb-3" width="150px">
+    <h6><strong>Cozinhar é para todos.</strong></h6>
+    <p class="small">© Cantinho Brasileiro 2024. Todos os direitos reservados.</p>
+  </div>
+
+  <!-- Coluna 2 - Meio (com newsletter) -->
+  <div class="col col-md-4 col-12 text-center mb-3">
+    <h5 class="mb-3"><strong>Entre em contato!</strong></h5>
+    <p>olaCantinho@gmail.com.br</p>
+
+    <div class="newsletter">
+      <h6><strong>Inscreva-se para nossa newsletter</strong></h6>
+      <form action="newsletter.php" method="POST">
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Seu e-mail" name="email" required>
+        </div>
+        <button type="submit" class="btn btn-success">Inscrever-se</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Coluna 3 - Redes Sociais -->
+  <div class="col col-12 text-end mb-3 social-col">
+    <h5 class="mb-3"><strong>Nos siga nas redes sociais</strong></h5>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/SenaiMG" target="_blank">
+        <img src="../img/FOOTER Facebook.png" alt="Facebook" style="width: 40px; height: 40px; margin-right: 10px;">
+      </a>
+      <a href="https://www.instagram.com/senaiminas" target="_blank">
+        <img src="../img/FOOTER Instagram.png" alt="Instagram" style="width: 40px; height: 40px; margin-right: 10px;">
+      </a>
+      <a href="https://x.com/senaimg" target="_blank">
+        <img src="../img/FOOTER Twitter.png" alt="Twitter" style="width: 40px; height: 40px; margin-right: 10px;">
+      </a>
+      <a href="https://www.youtube.com/c/SenaiMG" target="_blank">
+        <img src="../img/FOOTER youtube.png" alt="YouTube" style="width: 40px; height: 40px; margin-right: 10px;">
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  // Função para adicionar itens ào livro
+  function adicionarLivro(nome) {
+    let livro = JSON.parse(localStorage.getItem('livro')) || [];
+    const item = { nome, descricao };
+
+    livro.push(item);
+    localStorage.setItem('livro', JSON.stringify(livro));
+
+    alert(`${nome} foi adicionado ào seu livro.`);
+  }
+</script>
+
+<!-- Bootstrap JS e CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
-
 </html>

@@ -1,217 +1,392 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cantinho BRasileiro - Salgados do Sul</title>
+  <title>Salgados Sulistas | Cantinho BRasileiro</title>
+
+  <!-- LINK BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- CSS LOCAL -->
   <link rel="stylesheet" href="../style.css">
 
-  <!-- Link para Font Awesome (CDN) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMWx/w17N1yFCO7xzBf6VobH6lcxXoY8s+g8V4R" crossorigin="anonymous">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-  <!--Bootstrap Icons-->
-  <link rel="icon" href="..img/favicon.ico" type="image/x-icon">
+  <!--BOOTSTRAP ICONS-->
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+  <style>
+    /* Cor barra de menu */
+    .navbar {
+      background-color: #f7d9743b !important;
+    }
+
+    /* Fundo branco Dropdown*/
+    .dropdown-menu {
+      background-color: #ffffff79 !important;
+    } 
+
+    /* Cor do texto Dropdown*/
+    .dropdown-item,
+    .dropdown-item:hover {
+      color: #774308 !important;
+    }
+
+    /* FONTE E IMG DE FUNDO  */
+    body {
+      background-image: url('../img/Background.JPG');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      font-family: "Lexend", serif;
+      color: rgb(233, 223, 90);
+    }
+
+    .sul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px; /* Espaço total */
+    margin: 60px auto;
+    gap: 70px;
+}
+
+.image-left {
+    width: 45%; /* Deixa a imagem maior */
+    max-width: 550px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-box {
+    width: 50%;
+    text-align: left;
+}
+  </style>
 </head>
 
 <body>
 
-  <header>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg border-bottom border-warning">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<header>
+  <nav class="navbar navbar-expand-lg border-bottom border-warning">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <li class="nav-item">
-              <div class="container">
-                <a class="nav-link nav-hover h6 text-dark" href="quemsomos.html">Quem somos</a>
-              </div>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="doces.html">Doces</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="../Doces/doces-sul.html">Sul</a></li>
-                <li><a class="dropdown-item" href="../Doces/doces-sudeste.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="../Doces/doces-centro-oeste.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="../Doces/doces-Nordeste.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="../Doces/doces-Norte.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Salgados</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="../Salgados/salgados-sul.html">Sul</a></li>
-                <li><a class="dropdown-item" href="../Salgados/salgados-sudeste.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="../Salgados/salgados-centro-oeste.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="../Salgados/salgados-nordeste.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="../Salgados/salgados-norte.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item mx-auto">
-              <a class="navbar-brand" href="../index.html">
-                <a class="navbar-brand mx-4" href="../index.html"> <!--Logo navbar-->
-                  <img src="../img/logo.png" alt="Cantinho" width="95" height="95">
-                </a>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Bebidas</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="../Bebidas/bebidas-sul.html">Sul</a></li>
-                <li><a class="dropdown-item" href="../Bebidas/bebidas-sudeste.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="../Bebidas/bebidas-centro-oeste.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="../Bebidas/bebidas-nordeste.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="../Bebidas/bebidas-norte.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Carnes</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="../Carnes/carnes-sul.html">Sul</a></li>
-                <li><a class="dropdown-item" href="../Carnes/carnes-sudeste.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="../Carnes/carnes-centro-oeste.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="../Carnes/carnes-nordeste.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="../Carnes/carnes-norte.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item ms-3 me-3 dropdown">
-              <a class="nav-link nav-hover h6 text-dark" href="#" role="button">Saladas e molhos</a>
-              <ul class="dropdown-menu border-warning">
-                <li><a class="dropdown-item" href="../Sal-Mol/s.m-sul.html">Sul</a></li>
-                <li><a class="dropdown-item" href="../Sal-Mol/s.m-sudeste.html">Sudeste</a></li>
-                <li><a class="dropdown-item" href="../Sal-Mol/s.m-centro-oeste.html">Centro-Oeste</a></li>
-                <li><a class="dropdown-item" href="../Sal-Mol/s.m-nordeste.html">Nordeste</a></li>
-                <li><a class="dropdown-item" href="../Sal-Mol/s.m-norte.html">Norte</a></li>
-
-                <li>
-                  <hr class="dropdown-divider border-warning">
-                </li>
-                <li><a class="dropdown-item" href="produtos.html">Ver tudo</a></li>
-              </ul>
-            </li>
-          </ul>
-
-          <!-- Logo como um botão simples (BUGADO) -->
-          <li class="nav-item ms-3">
-            <a class="nav-link p-0" href="../quemsomos.html">
-              <img src="../img/receitas.fav.png" alt="Livro de Receitas" width="50" height="50" class="d-block">
-            </a>
+          <li class="nav-item">
+            <div class="container">
+              <a class="nav-link nav-hover h6" href="../index.html"><strong>Início</strong></a>
+            </div>
           </li>
 
-        </div>
-    </nav>
-  </header>
-  <main>
+          <li class="nav-item">
+            <div class="container">
+              <a class="nav-link nav-hover h6" href="../quemsomos.html"><strong>Quem Somos</strong></a>
+            </div>
+          </li>
 
-    </br>
-    <div class="container text-center">
-      <h3 class="receita">Entrevero de Pinhão</h3>
-      </br>
-      <img src="../img/Entrevero-de-pinhão.jpg" alt="..." width="1000" height="700">
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#"><strong>Doces</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="../Doces/doces-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="../Doces/doces-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="../Doces/doces-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="../Doces/doces-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="../Doces/doces-norte.html">Norte</a></li>
+            </ul>
+          </li>
 
-    </div>
-    <div class="container">
-      </br>
-      </br>
-      <h4>Ingredientes:</h4>
-      <p>1/2 kg de alcatra, cortada em cubos</p>
-      <p>1/2 kg de linguiça calabresa</p>
-      <p>1/2 kg de pinhão cozido e cortado ao meio</p>
-      <p>8 dentes de alho picados</p>
-      <p>1 pimentão vermelho em cubos</p>
-      <p>salsinha</p>
-      <p>1/2 kg de carne de porco, cortada em cubos</p>
-      <p>100 g de bacon em cubos pequenos </p>
-      <p>2 cebolas picadas</p>
-      <p>1 pimentão verde em cubos</p>
-      <p>Óleo</p>
-      <p>Sal a gosto</p>
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Salgados</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="../Salgados/salgados-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="../Salgados/salgados-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="../Salgados/salgados-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="../Salgados/salgados-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="../Salgados/salgados-norte.html">Norte</a></li>
+            </ul>
+          </li>
 
-      <h4>Modo de Preparo:</h4>
-      </br>
-      <p>Refogar as carnes pouco a pouco. Reservar. Em uma panela, de preferência de ferro, refogar o bacon em um pouco
-        de óleo. Juntar os pimentões e a cebola.</p>
-      <p>Refogar bem. Juntar o alho até dourar. Depois juntar a carne, o pinhão e o tomate. </p>
-      <p>misturar e checar o sal. </p>
-      <p>Clocar por cima um pouco de salsinha e servir com arroz branco.</p>
-      </br>
-      </br>
-      </br>
-      </br>
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Bebidas</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="../Bebidas/bebidas-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="../Bebidas/bebidas-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="../Bebidas/bebidas-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="../Bebidas/bebidas-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="../Bebidas/bebidas-norte.html">Norte</a></li>
+            </ul>
+          </li>
 
-    </div>
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Carnes</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="../Carnes/carnes-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="../Carnes/carnes-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="../Carnes/carnes-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="../Carnes/carnes-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="../Carnes/carnes-norte.html">Norte</a></li>
+            </ul>
+          </li>
 
-    <div class="container text-center">
-      <h3 class="receita">Pastel de Carne</h3>
-      <p></p>
-      <img src="../img/pastel-de-carne.jpg" alt="..." width="1000" height="700">
+          <li class="nav-item ms-3 me-3 dropdown">
+            <a class="nav-link nav-hover h6" href="#" role="button"><strong>Saladas e molhos</strong></a>
+            <ul class="dropdown-menu border-warning">
+              <li><a class="dropdown-item" href="../Sal-Mol/s.m-sul.html">Sul</a></li>
+              <li><a class="dropdown-item" href="../Sal-Mol/s.m-sudeste.html">Sudeste</a></li>
+              <li><a class="dropdown-item" href="../Sal-Mol/s.m-centro-oeste.html">Centro-Oeste</a></li>
+              <li><a class="dropdown-item" href="../Sal-Mol/s.m-nordeste.html">Nordeste</a></li>
+              <li><a class="dropdown-item" href="../Sal-Mol/s.m-norte.html">Norte</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="navbar-brand mx-4 tooltip-recado" href="../livro.html" data-recado="Suas receitas favoritas!">
+          <!--Logo livro de receitas-->
+          <img src="../img/receitas.fav.png" alt="Cantinho" width="50" height="50">
+        </a>
+        </li>
+      </div>
+  </nav>
+</header>
 
-    </div>
-    <div class="container">
-      </br>
-      </br>
-      <h4>Ingredientes:</h4>
-      <p>500 g de carne moída </p>
-      <p>1 cebola picada</p>
-      <p>2 dentes de alho picados</p>
-      <p>Sal e pimenta a gosto</p>
-      <p>1 pacote de massa de pastel</p>
-      <p>Óleo para fritar</p>
-
-      <h4>Modo de Preparo:</h4>
-      <p>Refogue a carne moída com a cebola e o alho. Tempere com sal e pimenta.</p>
-      <p>Modele os pastéis com a massa e recheie com a carne refogada.</p>
-      <p>Frite em óleo quente até ficarem dourados.</p>
-      <p></p>
-      <p></p>
-
-
-    </div>
-  </main>
-</body>
-<footer>
-  <div class="container text-center">
-    <p>© Cantinho BRasileiro 2024</p>
+<div class="sul">
+  <img src="../img/INICIO-SUL.png" alt="Doces do Sul" class="image-left">
+  <div class="text-box">
+      <h1>Salgados do Sul</h1>
+      <h3>O Sul do Brasil tem salgados tradicionais que carregam influências europeias e sabores marcantes. Entre os mais conhecidos, a Tainha Assada e o Pastel de berbigão conquistam pelo sabor e textura irresistíveis, sendo presença certa nas mesas da região.</h3>
   </div>
-</footer>
+</div>
+
+<!--TAINHA NA TAQUARA-->
+<div class="recipe-container">
+  <div class="recipe-content">
+    <h1>Tainha Assada na Taquara</h1> 
+    <div class="info-container">
+      <span class="info-item">
+          <img src="../img/Receitas-relógio.png" alt="Relógio" class="icon" width="20" height="20"> 40 minutos
+      </span>
+      <span class="info-item">
+          <img src="../img/Receitas-preparo.png" alt="Fácil" class="icon" width="30" height="30"> Fácil
+      </span>
+      <span class="info-item">
+          <img src="../img/Receitas-cifrão.png" alt="Custo" class="icon" width="20" height="20"> Custo Moderado
+      </span>
+      <span class="info-item">
+          <img src="../img/Receitas-user.png" alt="Porções" class="icon" width="20" height="20"> 2 porções
+      </span>
+    </div>
+
+    <div class="text-image-container">
+        <img src="../img/Autora-sul-1.png" alt="Fulana de Tal" class="author-image">
+        <p><strong>Por Fulana de Tal</strong> - A tainha assada na taquara é um prato típico de regiões litorâneas, especialmente no sul do Brasil. O preparo simples, mas cheio de sabor, traz o melhor da culinária local para sua mesa, ideal para ser servido com acompanhamentos leves e frescos.</p>
+    </div>
+
+    <h4>Ingredientes</h4>
+    <ul>
+        <li>2 tainhas frescas</li>
+        <li>Taquaras de bambu</li>
+        <li>Sal a gosto</li>
+        <li>Pimenta-do-reino a gosto</li>
+        <li>Azeite de oliva</li>
+        <li>Limão (opcional)</li>
+        <li>Temperos a gosto, como alho, salsinha, coentro, cebolinha, etc.</li>
+    </ul>
+
+    <h4>Utensílios</h4>
+    <ul>
+        <li>1 churrasqueira</li>
+        <li>Taquaras de bambu</li>
+        <li>Faca para cortar o peixe</li>
+    </ul>
+
+    <h4>Modo de Preparo:</h4>
+    <ul>1- Prepare as taquaras de bambu: Corte as taquaras em pedaços de aproximadamente 50 cm de comprimento. Certifique-se de que elas estejam limpas e sem farpas.</ul>
+    <ul>2- Limpe as tainhas: Lave as tainhas por dentro e por fora, removendo escamas e vísceras. Faça pequenos cortes na pele do peixe para que o tempero possa penetrar.</ul>
+    <ul>3- Tempere as tainhas: Tempere as tainhas com sal, pimenta-do-reino e outros temperos a gosto. Você pode adicionar alho picado, salsinha, coentro, cebolinha, ou qualquer outro tempero que preferir. Regue o peixe com azeite de oliva e, se desejar, espalhe um pouco de suco de limão sobre ele.</ul>
+    <ul>4- Espete as tainhas nas taquaras: Espete as tainhas nas taquaras de bambu, deixando espaço suficiente para que o peixe fique firme. Isso geralmente é feito atravessando a taquara pela parte traseira da tainha e depois pela parte frontal.</ul>
+    <ul>5- Asse as tainhas na taquara: Prepare uma churrasqueira com brasa média/alta. Quando as brasas estiverem quentes e com uma camada de cinzas, coloque as tainhas espetadas nas taquaras na grelha. Gire as taquaras para que o peixe asse de maneira uniforme.</ul>
+    <ul>6- Asse por cerca de 20 a 30 minutos, ou até que as tainhas estejam cozidas e com a pele dourada e crocante.</ul>
+    <ul>7- Sirva quente: Retire as tainhas da taquara e sirva imediatamente. Você pode acompanhar com saladas, arroz, feijão ou outros acompanhamentos de sua preferência.</ul>
+
+    <div class="recipe-actions">
+      <button class="action-btn">
+          <i class="fa fa-heart"></i> Favoritar
+      </button>
+      <button class="action-btn">
+          <i class="fa fa-share-alt"></i> Compartilhar
+      </button>
+      <button class="action-btn">
+          <i class="fa fa-print"></i> Imprimir
+      </button>
+    </div>
+  </div>
+
+  <img src="../img/Sul-Tainha-Taquara.png" alt="Tainha Assada na Taquara" class="recipe-image" style="height: 400px">
+</div>
 
 
+<!--PATEL DE BERBIGÃO -->
+<div class="recipe-container">
+  <div class="recipe-content">
+    <h1>Pastel de Berbigão</h1> 
+    <div class="info-container">
+      <span class="info-item">
+          <img src="../img/Receitas-relógio.png" alt="Relógio" class="icon" width="20" height="20"> 30 minutos
+      </span>
+      <span class="info-item">
+          <img src="../img/Receitas-preparo.png" alt="Fácil" class="icon" width="30" height="30"> Fácil
+      </span>
+      <span class="info-item">
+          <img src="../img/Receitas-cifrão.png" alt="Custo" class="icon" width="20" height="20"> Custo Moderado
+      </span>
+      <span class="info-item">
+          <img src="../img/Receitas-user.png" alt="Porções" class="icon" width="20" height="20"> 4 porções
+      </span>
+    </div>
+
+    <div class="text-image-container">
+        <img src="../img/Autora-sul-2.png" alt="Fulana de Tal" class="author-image">
+        <p><strong>Por Fulana de Tal</strong> - O pastel de berbigão é um dos quitutes mais tradicionais das praias catarinenses. Feito com um recheio suculento e um toque de requeijão, esse pastel é perfeito para acompanhar uma tarde à beira-mar!</p>
+    </div>
+
+    <h4>Ingredientes</h4>
+    <ul>
+        <li>300g de berbigão limpo</li>
+        <li>1/2 cebola</li>
+        <li>1/2 lata de molho de tomate</li>
+        <li>400g de massa para pastel</li>
+        <li>Requeijão a gosto</li>
+    </ul>
+
+    <h4>Utensílios</h4>
+    <ul>
+        <li>1 Panela</li>
+        <li>1 Colher de pau</li>
+        <li>1 Faca</li>
+        <li>1 Frigideira para fritura</li>
+    </ul>
+
+    <h4>Modo de Preparo:</h4>
+    <ul>1- Pique a cebola bem fininha e refogue em uma panela com margarina.</ul>
+    <ul>2- Lave bem o berbigão e leve ao fogo junto da cebola e do molho de tomate.</ul>
+    <ul>3- Deixe cozinhar por aproximadamente 10 minutos, adicionando um pouco de água caso o molho fique muito seco antes do tempo. O recheio precisa estar bem sequinho ao final.</ul>
+    <ul>4- Tempere a gosto.</ul>
+    <ul>5- Na massa de pastel, adicione 1 colher de requeijão e preencha com o berbigão.</ul>
+    <ul>6- Agora é só fritar até dourar e servir quente.</ul>
+
+    <div class="recipe-actions">
+      <button class="action-btn">
+          <i class="fa fa-heart"></i> Favoritar
+      </button>
+      <button class="action-btn">
+          <i class="fa fa-share-alt"></i> Compartilhar
+      </button>
+      <button class="action-btn">
+          <i class="fa fa-print"></i> Imprimir
+      </button>
+    </div>
+  </div>
+
+  <img src="../img/Sul-Pastel-Berbigao.png" alt="Pastel de Berbigão" class="recipe-image" style="height: 400px">
+</div>
+
+
+</main>
+<!-- Script de Download e Adição ao Livro -->
+<script>
+  function downloadRecipe(contentId, filename) {
+    const content = document.getElementById(contentId).innerText;
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    a.click();
+
+    URL.revokeObjectURL(url);
+  }
+
+  function addToRecipeBook(recipeName) {
+    alert(`A receita "${recipeName}" foi adicionada ao seu Livro de Receitas!`);
+    // Aqui você pode adicionar a lógica para armazenar a receita no livro, como localStorage ou uma chamada de API.
+  }
+</script>
+</main>
+
+<div class="row row-footer" style="border-top: 2px solid rgb(252, 252, 119);">
+  <!-- Coluna 1 - Lado esquerdo -->
+  <div class="col col-md-4 col-12 text-start mb-3">
+    <img src="../img/favicon.ico" class="mb-3" width="150px">
+    <h6><strong>Cozinhar é para todos.</strong></h6>
+    <p class="small">© Cantinho Brasileiro 2024. Todos os direitos reservados.</p>
+  </div>
+
+  <!-- Coluna 2 - Meio (com newsletter) -->
+  <div class="col col-md-4 col-12 text-center mb-3">
+    <h5 class="mb-3"><strong>Entre em contato!</strong></h5>
+    <p>olaCantinho@gmail.com.br</p>
+
+    <div class="newsletter">
+      <h6><strong>Inscreva-se para nossa newsletter</strong></h6>
+      <form action="newsletter.php" method="POST">
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Seu e-mail" name="email" required>
+        </div>
+        <button type="submit" class="btn btn-success">Inscrever-se</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Coluna 3 - Redes Sociais -->
+  <div class="col col-12 text-end mb-3 social-col">
+    <h5 class="mb-3"><strong>Nos siga nas redes sociais</strong></h5>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/SenaiMG" target="_blank">
+        <img src="../img/FOOTER Facebook.png" alt="Facebook" style="width: 40px; height: 40px; margin-right: 10px;">
+      </a>
+      <a href="https://www.instagram.com/senaiminas" target="_blank">
+        <img src="../img/FOOTER Instagram.png" alt="Instagram" style="width: 40px; height: 40px; margin-right: 10px;">
+      </a>
+      <a href="https://x.com/senaimg" target="_blank">
+        <img src="../img/FOOTER Twitter.png" alt="Twitter" style="width: 40px; height: 40px; margin-right: 10px;">
+      </a>
+      <a href="https://www.youtube.com/c/SenaiMG" target="_blank">
+        <img src="../img/FOOTER youtube.png" alt="YouTube" style="width: 40px; height: 40px; margin-right: 10px;">
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  // Função para adicionar itens ào livro
+  function adicionarLivro(nome) {
+    let livro = JSON.parse(localStorage.getItem('livro')) || [];
+    const item = { nome, descricao };
+
+    livro.push(item);
+    localStorage.setItem('livro', JSON.stringify(livro));
+
+    alert(`${nome} foi adicionado ào seu livro.`);
+  }
+</script>
+
+<!-- Bootstrap JS e CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
-
 </html>
